@@ -66,16 +66,16 @@ exit 0
 fi
 
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
+echo "Tunggu azu...."
 
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37m      • TROJAN Go MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " [\e[36m•1\e[0m] Create Account Trojan Go "
-echo -e " [\e[36m•2\e[0m] Trial Account Trojan Go "
-echo -e " [\e[36m•3\e[0m] Extending Account Trojan Go "
+echo -e " [\e[36m•1\e[0m] Create Trojan Go "
+echo -e " [\e[36m•2\e[0m] Trial Trojan Go "
+echo -e " [\e[36m•3\e[0m] Extending Trojan Go "
 echo -e " [\e[36m•4\e[0m] Delete Account Trojan Go "
 echo -e " [\e[36m•5\e[0m] Check User Login Trojan Go"
 echo -e ""
