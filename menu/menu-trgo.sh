@@ -75,7 +75,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e ""
 echo -e " [\e[36m•1\e[0m] Create Account Trojan Go "
 echo -e " [\e[36m•2\e[0m] Trial Account Trojan Go "
-echo -e " [\e[36m•3\e[0m] Extending Account Trojan Go Active Life "
+echo -e " [\e[36m•3\e[0m] Extending Account Trojan Go "
 echo -e " [\e[36m•4\e[0m] Delete Account Trojan Go "
 echo -e " [\e[36m•5\e[0m] Check User Login Trojan Go"
 echo -e ""
