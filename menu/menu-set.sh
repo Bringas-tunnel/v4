@@ -1,6 +1,6 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
+echo "tunggu azu..."
 
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
