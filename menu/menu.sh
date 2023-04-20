@@ -263,7 +263,7 @@ fi
 
 clear 
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[44;1;39m        ⇱ SCRIPT PREMIUM BRINGAS TUNNEL ⇲       \E[0m"
+echo -e " \E[44;1;39m           ⇱ BRINGAS TUNNEL ⇲       \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "    [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
@@ -277,8 +277,8 @@ echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━�
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
 echo -e " \E[44;1;39m                 • SCRIPT MENU •                \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
-echo -e " [\e[36m•1\e[0m] SSH & OpenVPN Menu [\e[36m•5\e[0m]\033[1;31m CEK AREK AKTIF SSH$NC"
-echo -e " [\e[36m•2\e[0m] Vmess Menu         [\e[36m•6\e[0m]\033[1;31m CEK AREK AKTIF XRAY$NC"
+echo -e " [\e[36m•1\e[0m] SSH Menu  [\e[36m•5\e[0m]\033[1;31m CEK AREK AKTIF SSH$NC"
+echo -e " [\e[36m•2\e[0m] v2ray Menu         [\e[36m•6\e[0m]\033[1;31m CEK AREK AKTIF XRAY$NC"
 echo -e " [\e[36m•3\e[0m] Vless Menu         [\e[36m•7\e[0m] Clear RAM Cache"
 echo -e " [\e[36m•4\e[0m] Trojan Go Menu     [\e[36m•8\e[0m] Trojan WSS Menu"                  
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
