@@ -66,8 +66,7 @@ exit 0
 fi
 
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-
+echo "Tunggu azu..."
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37m       • SSH & OVPN MENU •         \E[0m"
