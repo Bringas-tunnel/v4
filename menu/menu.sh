@@ -287,7 +287,7 @@ echo -e "\e[36m╘════════════════════�
  [\033[1;36m09\033[0m] Setting Menu [\033[1;32mPro${NC}] [\033[1;36m14\033[0m] \033[1;31mSEtting Pasword VPS${NC}
  [\033[1;36m10\033[0m] Gen cert SSL       [\033[1;36m15\033[0m] \033[1;33mSEtting Auto Reboot${NC}
  [\033[1;36m11\033[0m] Cek Status \033[1;32mRUNNING${NC} [\033[1;36m16\033[0m] Cek Pkt bulanan
- [\033[1;36m12\033[0m] Reboot  VPS \033[1;36mX-Ray${NC}   [\033[1;36m17\033[0m] Cek Pkt \033[1;33mHarian${NC}
+ [\033[1;36m12\033[0m] Reboot  VPS \033[1;36mX-Ray${NC}  [\033[1;36m17\033[0m] Cek Pkt \033[1;33mHarian${NC}
  [\033[1;36m13\033[0m] Restart VPS        [\033[1;36m18\033[0m] CEK INFO \033[1;33m VPS${NC}
 "
 echo -e   " \033[1;33m Press x or [ Ctrl+C ] • To-Exit-Script ${NC}"
