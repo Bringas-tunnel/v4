@@ -267,34 +267,34 @@ echo -e " \E[44;1;36m           ⇱ BRINGAS TUNNEL ⇲       \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "    [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e "\e[33m Operating     \e[0m: \033[1;32m "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	${NC}
-echo -e "\e[33m Total RAM     \e[0m: \033[1;32m $tram MB ${NC}"
-echo -e "\e[33m System        \e[0m: \033[1;32m $uptime ${NC}"
-echo -e "\e[33m Isp Name      \e[0m: \033[1;32m $ISP ${NC}"
-echo -e "\e[33m Domain        \e[0m: \033[1;36m $domain ${NC}"	
-echo -e "\e[33m Ip Vps        \e[0m: \033[1;36m $IPVPS ${NC}"	
+echo -e "\e[37m OPERATING     \e[0m: \033[1;32m "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	${NC}
+echo -e "\e[37m TOTAL RAM     \e[0m: \033[1;32m $tram MB ${NC}"
+echo -e "\e[37m SYSTEM        \e[0m: \033[1;32m $uptime ${NC}"
+echo -e "\e[37m ISP NAME      \e[0m: \033[1;32m $ISP ${NC}"
+echo -e "\e[37m DOMAIN        \e[0m: \033[1;36m $domain ${NC}"	
+echo -e "\e[37m IP VPS        \e[0m: \033[1;36m $IPVPS ${NC}"	
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
 echo -e " \E[44;1;36m                 • MENU •                \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e " [\e[36m•1\e[0m] SSH           [\e[36m•5\e[0m] CEK AREK AKTIF SSH$NC"
-echo -e " [\e[36m•2\e[0m] v2ray         [\e[36m•6\e[0m] CEK AREK AKTIF XRAY$NC"
+echo -e " [\e[36m•2\e[0m] V2ray         [\e[36m•6\e[0m] CEK AREK AKTIF XRAY$NC"
 echo -e " [\e[36m•3\e[0m] Vless         [\e[36m•7\e[0m] Clear RAM Cache"
 echo -e " [\e[36m•4\e[0m] Trojan Go     [\e[36m•8\e[0m] Trojan WSS"                  
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
 echo -e " \E[44;1;36m                 • SETINGS •                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m
- [\033[1;36m09\033[0m] Setting Menu       [\033[1;32mPro${NC}] [\033[1;36m14\033[0m] \033[1;31mSEtting Pasword VPS${NC}
- [\033[1;36m10\033[0m] Gen cert SSL       [\033[1;36m15\033[0m] \033[1;33mSEtting Auto Reboot${NC}
- [\033[1;36m11\033[0m] Cek Status \033[1;32mRUNNING${NC} [\033[1;36m16\033[0m] Cek Pkt bulanan
- [\033[1;36m12\033[0m] Reboot VPS \033[1;36mX-Ray${NC}  [\033[1;36m17\033[0m] Cek Pkt \033[1;33mHarian${NC}
- [\033[1;36m13\033[0m] Restart VPS        [\033[1;36m18\033[0m] CEK INFO \033[1;33m VPS${NC}
+ [\033[1;36m09\033[0m] Setting Menu       [\033[1;32mPro${NC}]  SEtting Pasword VPS${NC}
+ [\033[1;36m10\033[0m] Gen cert SSL       [\033[1;36m15\033[0m] SEtting Auto Reboot${NC}
+ [\033[1;36m11\033[0m] Cek RUNNING${NC}   [\033[1;36m16\033[0m] Cek Pkt bulanan
+ [\033[1;36m12\033[0m] Reboot X-Ray${NC}  [\033[1;36m17\033[0m] Cek Pkt Harian${NC}
+ [\033[1;36m13\033[0m] Restart VPS        [\033[1;36m18\033[0m] CEK INFO VPS${NC}
 "
 echo -e   " \033[1;33m Press x or [ Ctrl+C ] • To-Exit-Script ${NC}"
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
 echo -e "\e[36m│ Client Name :$NC \033[1;32m $Name ${NC}"
 echo -e "\e[36m│ User Roles  :${NC} \033[1;32m Premium user ${NC}"
-    echo -e "\e[36m│ Exp License :$NC \033[1;32m $Exp Day ${NC}"
+    echo -e "\e[36m│ Exp Script :$NC \033[1;32m $Exp Day ${NC}"
 echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m"
 echo -e   ""
 read -p " Select menu :  "  opt
