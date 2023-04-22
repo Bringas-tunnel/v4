@@ -263,7 +263,7 @@ fi
 
 clear 
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[44;1;39m           ⇱ BRINGAS TUNNEL ⇲       \E[0m"
+echo -e " \E[44;1;36m           ⇱ BRINGAS TUNNEL ⇲       \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "    [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
@@ -275,14 +275,14 @@ echo -e "\e[33m Domain        \e[0m: \033[1;36m $domain ${NC}"
 echo -e "\e[33m Ip Vps        \e[0m: \033[1;36m $IPVPS ${NC}"	
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[44;1;39m                 • MENU •                \E[0m"
+echo -e " \E[44;1;36m                 • MENU •                \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e " [\e[36m•1\e[0m] SSH           [\e[36m•5\e[0m] CEK AREK AKTIF SSH$NC"
 echo -e " [\e[36m•2\e[0m] v2ray         [\e[36m•6\e[0m] CEK AREK AKTIF XRAY$NC"
 echo -e " [\e[36m•3\e[0m] Vless         [\e[36m•7\e[0m] Clear RAM Cache"
 echo -e " [\e[36m•4\e[0m] Trojan Go     [\e[36m•8\e[0m] Trojan WSS"                  
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
-echo -e " \E[44;1;39m                 • SETINGS •                \E[0m"
+echo -e " \E[44;1;36m                 • SETINGS •                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m
  [\033[1;36m09\033[0m] Setting Menu       [\033[1;32mPro${NC}] [\033[1;36m14\033[0m] \033[1;31mSEtting Pasword VPS${NC}
  [\033[1;36m10\033[0m] Gen cert SSL       [\033[1;36m15\033[0m] \033[1;33mSEtting Auto Reboot${NC}
