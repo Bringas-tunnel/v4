@@ -284,7 +284,7 @@ echo -e " [\e[36m•4\e[0m] Trojan Go     [\e[36m•8\e[0m] Trojan WSS"
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
 echo -e " \E[44;1;36m                 • SETINGS •                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m
- [\033[1;36m09\033[0m] Setting Menu       [\033[1;32mPro${NC}]  SEtting Pasword VPS${NC}
+ [\033[1;36m09\033[0m] Setting Menu${NC}  [\033[1;32m14\033[0m] SEtting Pasword VPS${NC}
  [\033[1;36m10\033[0m] Gen cert SSL       [\033[1;36m15\033[0m] SEtting Auto Reboot${NC}
  [\033[1;36m11\033[0m] Cek RUNNING${NC}   [\033[1;36m16\033[0m] Cek Pkt bulanan
  [\033[1;36m12\033[0m] Reboot X-Ray${NC}  [\033[1;36m17\033[0m] Cek Pkt Harian${NC}
