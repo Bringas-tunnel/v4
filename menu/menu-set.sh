@@ -7,14 +7,14 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[40;1;37m          • SYSTEM MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " [\e[36m•1\e[0m] Panel Domain"
-echo -e " [\e[36m•2\e[0m] Change Port All Account"
+echo -e " [\e[36m•1\e[0m] Ubah Domain"
+echo -e " [\e[36m•2\e[0m] Ubah Port All Akun"
 echo -e " [\e[36m•3\e[0m] Webmin Menu"
 echo -e " [\e[36m•4\e[0m] Speedtest VPS"
-echo -e " [\e[36m•5\e[0m] About Script"
-echo -e " [\e[36m•6\e[0m] Set Auto Reboot"
+echo -e " [\e[36m•5\e[0m] Tentang Script"
+echo -e " [\e[36m•6\e[0m] Atur Auto Reboot"
 echo -e " [\e[36m•7\e[0m] Restart All Service"
-echo -e " [\e[36m•8\e[0m] Change Banner"
+echo -e " [\e[36m•8\e[0m] Ubah Banner"
 echo -e " [\e[36m•9\e[0m] Cek Bandwith"
 echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
@@ -37,5 +37,5 @@ case $opt in
 9) clear ; bw ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; menu-set ;;
+*) echo -e "" ; echo "salah pencet taiii" ; sleep 1 ; menu-set ;;
 esac
