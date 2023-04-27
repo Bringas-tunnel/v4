@@ -277,18 +277,18 @@ echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━�
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
 echo -e " \E[44;1;36m                 • MENU •                \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
-echo -e " [\e[36m•1\e[0m] SSH           [\e[36m•5\e[0m] CEK AREK AKTIF SSH$NC"
-echo -e " [\e[36m•2\e[0m] V2ray         [\e[36m•6\e[0m] CEK AREK AKTIF XRAY$NC"
+echo -e " [\e[36m•1\e[0m] SSH           [\e[36m•5\e[0m] CEK AKTIF SSH$NC"
+echo -e " [\e[36m•2\e[0m] V2ray         [\e[36m•6\e[0m] CEK AKTIF XRAY$NC"
 echo -e " [\e[36m•3\e[0m] Vless         [\e[36m•7\e[0m] Clear RAM Cache"
 echo -e " [\e[36m•4\e[0m] Trojan Go     [\e[36m•8\e[0m] Trojan WSS"                  
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
 echo -e " \E[44;1;36m                 • SETINGS •                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m
  [\033[1;36m09\033[0m] Setting Menu${NC}  [\033[1;36m14\033[0m] SEtting Pasword VPS${NC}
- [\033[1;36m10\033[0m] Gen cert SSL   [\033[1;36m15\033[0m] SEtting Auto Reboot${NC}
+ [\033[1;36m10\033[0m] Gen cert SSL [\033[1;36m15\033[0m] SEtting Auto Reboot${NC}
  [\033[1;36m11\033[0m] Cek RUNNING${NC}   [\033[1;36m16\033[0m] Cek Pkt bulanan
  [\033[1;36m12\033[0m] Reboot X-Ray${NC}  [\033[1;36m17\033[0m] Cek Pkt Harian${NC}
- [\033[1;36m13\033[0m] Restart VPS    [\033[1;36m18\033[0m] CEK INFO VPS${NC}
+ [\033[1;36m13\033[0m] Restart VPS  [\033[1;36m18\033[0m] CEK INFO VPS${NC}
 "
 echo -e   " \033[1;33m Press x or [ Ctrl+C ] • To-Exit-Script ${NC}"
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
