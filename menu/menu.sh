@@ -270,7 +270,7 @@ echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[37m OPERATING     \e[0m: \033[1;32m "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	${NC}
 echo -e "\e[37m TOTAL RAM     \e[0m: \033[1;32m $tram MB ${NC}"
 echo -e "\e[37m SYSTEM        \e[0m: \033[1;32m $uptime ${NC}"
-echo -e "\e[37m ISP NAME      \e[0m: \033[1;32m $ISP ${NC}"
+echo -e "\e[37m SERVER        \e[0m: \033[1;32m $ISP ${NC}"
 echo -e "\e[37m DOMAIN        \e[0m: \033[1;36m $domain ${NC}"	
 echo -e "\e[37m IP VPS        \e[0m: \033[1;36m $IPVPS ${NC}"	
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
