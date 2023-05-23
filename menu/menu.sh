@@ -166,7 +166,7 @@ else
 uis="${red}Free Version$NC"
 fi
 MYIP=$(curl -sS ipv4.icanhazip.com)
-echo "Checking VPS"
+echo "TUNGGU ANJIR"
 #########################
 
 # Color Validation
@@ -259,11 +259,11 @@ if [[ $nginx == "running" ]]; then
     status_nginx="${GREEN}ON${NC}"
 else
     status_nginx="${red}OFF${NC}"
-fi
+    fi
 
-clear 
+clear
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[44;1;36m           ⇱ BRINGAS TUNNEL ⇲       \E[0m"
+echo -e " \E[44;1;36m           ⇱ BRINGAS FAMILY ⇲           \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "    [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
@@ -275,30 +275,28 @@ echo -e "\e[37m DOMAIN        \e[0m: \033[1;36m $domain ${NC}"
 echo -e "\e[37m IP VPS        \e[0m: \033[1;36m $IPVPS ${NC}"	
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[44;1;36m                 • MENU •                \E[0m"
+echo -e " \E[44;1;36m                 • MENU ASU•                \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
-echo -e " [\e[36m•1\e[0m] SSH"
-echo -e " [\e[36m•2\e[0m] V2RAY"      
-echo -e " [\e[36m•3\e[0m] VLESS"
-echo -e " [\e[36m•4\e[0m] TROJAN-GO"
-echo -e " [\e[36m•5\e[0m] ck ssh active$NC"
-echo -e " [\e[36m•6\e[0m] ck vmes active$NC"
-echo -e " [\e[36m•7\e[0m] clear Cache"
-echo -e " [\e[36m•8\e[0m] TROJAN-WS"
+echo -e " [\e[33m•1\e[0m] ssh"
+echo -e " [\e[33m•2\e[0m] vmess"      
+echo -e " [\e[33m•3\e[0m] vless"
+echo -e " [\e[33m•4\e[0m] trojan-GO"
+echo -e " [\e[33m•5\e[0m] ssh Active$NC"
+echo -e " [\e[33m•6\e[0m] vmes Active$NC"
+echo -e " [\e[33m•7\e[0m] clear Cache"
+echo -e " [\e[33m•8\e[0m] trojan-WS"
 echo -e "\e[36m╒════════════════════════════════════════════════╕\033[0m"
 echo -e " \E[44;1;36m                 • SETINGS •                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m
  [\033[1;36m09\033[0m] Setting Menu${NC}  [\033[1;36m14\033[0m] SEtting Pasword VPS${NC}
  [\033[1;36m10\033[0m] Gen cert SSL  [\033[1;36m15\033[0m] SEtting Auto Reboot${NC}
- [\033[1;36m11\033[0m] Cek RUNNING${NC}   [\033[1;36m16\033[0m] Cek Pkt bulanan
+ [\033[1;36m11\033[0m] cek Running${NC}   [\033[1;36m16\033[0m] Cek Pkt bulanan
  [\033[1;36m12\033[0m] Reboot X-Ray${NC}  [\033[1;36m17\033[0m] Cek Pkt Harian${NC}
- [\033[1;36m13\033[0m] Restart VPS   [\033[1;36m18\033[0m] CEK INFO VPS${NC}
-"
-echo -e   " \033[1;33m Press x or [ Ctrl+C ] • To-Exit-Script ${NC}"
+ [\033[1;36m13\033[0m] Restart VPS   [\033[1;36m18\033[0m] CEK INFO VPS${NC}"
 echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
-echo -e "\e[36m│  Client Name :$NC \033[1;32m $Name ${NC}"
-echo -e "\e[36m│  User Roles  :${NC} \033[1;32m Premium user ${NC}"
-    echo -e "\e[36m│ Exp Script :$NC \033[1;32m $Exp Day ${NC}"
+echo -e "\e[36m│  Client   =$NC \033[1;32m $Name ${NC}"
+echo -e "\e[36m│  User     =${NC} \033[1;32m Bringas-family ${NC}"
+echo -e "\e[36m│  Exp      =$NC \033[1;32m $Exp Day ${NC}"
 echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m"
 echo -e   ""
 read -p " Select menu :  "  opt
