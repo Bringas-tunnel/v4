@@ -1,7 +1,5 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "tunggu azu..."
-
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37m          • SYSTEM MENU •          \E[0m"
@@ -16,10 +14,7 @@ echo -e " [\e[36m•6\e[0m] Atur Reboot"
 echo -e " [\e[36m•7\e[0m] Restart Service"
 echo -e " [\e[36m•8\e[0m] Ubah Banner"
 echo -e " [\e[36m•9\e[0m] Cek Bandwith"
-echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo -e   ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
