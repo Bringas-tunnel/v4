@@ -66,8 +66,6 @@ exit 0
 fi
 
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Tunggu azu...."
-
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37m      • MENU TROJAN-GO •          \E[0m"
@@ -78,14 +76,11 @@ echo -e " [\e[36m•2\e[0m] Buat Trial "
 echo -e " [\e[36m•3\e[0m] Extending Trojan-Go "
 echo -e " [\e[36m•4\e[0m] Hapus Akun Trojan-Go "
 echo -e " [\e[36m•5\e[0m] Cek User Login Trojan-Go"
-echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select menu : " opt
+read -p " Select =>  " opt
 echo -e ""
 case $opt in
 1) clear ; addtrgo ;;
