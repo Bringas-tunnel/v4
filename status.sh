@@ -1,8 +1,8 @@
 #!/bin/bash
 # Welcome Information
 # Edition : Stable Edition V1.0
-# Author  : ADAM SIJA
-# (C) Copyright 2021-2022 By ADAM SIJA
+# Author  : BRINGAS GROUP
+# (C) Copyright 2021-2022 By Bringas Tunnel
 # =========================================
 
 # // Exporting Language to UTF-8
