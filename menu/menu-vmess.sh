@@ -78,7 +78,7 @@ echo -e " [\e[36m•5\e[0m] Cek User Login"
 echo -e " [\e[36m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " pilih menu :  "  opt
+read -p "  select =>   "  opt
 echo -e ""
 case $opt in
 1) clear ; add-ws ; exit ;;
