@@ -301,7 +301,7 @@ echo -e "\e[36m│  User     =${NC} \033[1;32m SC by: BRINGAS ${NC}"
 echo -e "\e[36m│  Exp      =$NC \033[1;32m $Exp Day ${NC}"
 echo -e "\e[36m╘══════════════════════════════════════════════╛\033[0m"
 echo -e   ""
-read -p " Select menu :  "  opt
+read -p " Select =>   "  opt
 echo -e   ""
 case $opt in
 1) clear ; menu-ssh ;;
