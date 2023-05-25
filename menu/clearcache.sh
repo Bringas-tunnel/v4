@@ -1,7 +1,5 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-
 clear
 echo ""
 echo ""
@@ -10,6 +8,5 @@ echo 1 > /proc/sys/vm/drop_caches
 sleep 3
 echo -e "[ \033[32mok\033[0m ] Cache cleared"
 echo ""
-echo "Back to menu in 2 sec "
-sleep 2
+echo "Back to menu in "
 menu
