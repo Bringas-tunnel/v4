@@ -1,29 +1,26 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m      • BANDWITH MONITOR •         \E[0m"
+echo -e "\E[40;1;37m      • PANTAU BANDWITH  •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "" 
 echo -e " [\e[36m•1\e[0m] Lihat Total Bandwith Tersisa"
-echo -e " [\e[36m•2\e[0m] Tabel Penggunaan Setiap 5 Menit"
-echo -e " [\e[36m•3\e[0m] Tabel Penggunaan Setiap Jam"
-echo -e " [\e[36m•4\e[0m] Tabel Penggunaan Setiap Hari"
-echo -e " [\e[36m•5\e[0m] Tabel Penggunaan Setiap Bulan"
-echo -e " [\e[36m•6\e[0m] Tabel Penggunaan Setiap Tahun"
-echo -e " [\e[36m•7\e[0m] Tabel Penggunaan Tertinggi"
-echo -e " [\e[36m•8\e[0m] Statistik Penggunaan Setiap Jam"
-echo -e " [\e[36m•9\e[0m] Lihat Penggunaan Aktif Saat Ini"
-echo -e " [\e[36m10\e[0m] Lihat Trafik Penggunaan Aktif Saat Ini [5s]"
-echo -e "" 
+echo -e " [\e[36m•2\e[0m] Penggunaan Setiap 5 Menit"
+echo -e " [\e[36m•3\e[0m] Pnggunaan Setiap Jam"
+echo -e " [\e[36m•4\e[0m] Penggunaan Setiap Hari"
+echo -e " [\e[36m•5\e[0m] Penggunaan Setiap Bulan"
+echo -e " [\e[36m•6\e[0m] Penggunaan Setiap Tahun"
+echo -e " [\e[36m•7\e[0m] Penggunaan Tertinggi"
+echo -e " [\e[36m•8\e[0m] Penggunaan Setiap Jam"
+echo -e " [\e[36m•9\e[0m] Penggunaan Saat Ini"
+echo -e " [\e[36m10\e[0m] Penggunaan Aktif Saat Ini [5s]"
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e " [\e[31m•x\e[0m] Keluar"
 echo -e "" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select menu : " opt
+read -p " Select =>   " opt
 echo -e ""
 case $opt in
 1)
@@ -38,7 +35,7 @@ vnstat
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
@@ -54,7 +51,7 @@ vnstat -5
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
@@ -70,7 +67,7 @@ vnstat -h
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
@@ -86,7 +83,7 @@ vnstat -d
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
@@ -102,7 +99,7 @@ vnstat -m
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "kembali ke menu pencet enter"
 bw
 ;;
 
@@ -118,7 +115,7 @@ vnstat -y
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kemabli ke menu pencet enter"
 bw
 ;;
 
@@ -134,7 +131,7 @@ vnstat -t
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
@@ -150,7 +147,7 @@ vnstat -hg
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
@@ -167,7 +164,7 @@ vnstat -l
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
@@ -183,7 +180,7 @@ vnstat -tr
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Kembali ke menu pencet enter"
 bw
 ;;
 
