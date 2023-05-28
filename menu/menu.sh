@@ -287,11 +287,10 @@ echo -e "\e[37m SERVER        \e[0m: \033[1;32m $ISP ${NC}"
 echo -e "\e[37m DOMAIN        \e[0m: \033[1;32m $domain ${NC}"	
 echo -e "\e[37m IP VPS        \e[0m: \033[1;32m $IPVPS ${NC}"	
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
-echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}" 
+echo -e "${GREEN}┌────────────────────────────────────────────────────────────┐${NC}" 
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  $COLOR1" 
 echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC" 
-echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}" 
-echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${GREEN}└───────────────────────────────────────────────────────────┘${NC}" 
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
 echo -e " \E[44;1;33m                 • MENU ACCOUNT •             \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
@@ -306,13 +305,12 @@ echo -e "\e[36m╘════════════════════�
 echo -e " [\e[36m06\e[0m] clear Cache"
 echo -e " [\e[36m07\e[0m] vmes Active$NC"
 echo -e " [\e[36m08\e[0m] ssh Active$NC"
-echo -e " [\e[36m09\e[0m] Setting Menu${NC}"
-echo -e " [\e[36m10\e[0m] Gen cert SSL"
+echo -e " [\e[36m09\e[0m] ganti pasword vps${NC}"
+echo -e " [\e[36m10\e[0m] atur waktu reboot${NC}"
 echo -e " [\e[36m11\e[0m] Cek Running${NC}"
 echo -e " [\e[36m12\e[0m] Reboot X-Ray${NC}"
-echo -e " [\e[36m14\e[0m] SEtting Pasword VPS${NC}"
-echo -e " [\e[36m15\e[0m] SEtting Auto Reboot${NC}"
-echo -e " [\e[36m16\e[0m] Cek info Vps${NC}"
+echo -e " [\e[36m14\e[0m] settings menu${NC}"
+echo -e " [\e[36m15\e[0m] Gen cert v2ray"
 echo -e "\e[36m╒══════════════════════════════════════════════╕\033[0m"
 echo -e "\e[36m│  Client   =$NC \033[1;32m $Name ${NC}"
 echo -e "\e[36m│  User     =${NC} \033[1;32m SC by: BRINGAS ${NC}"
@@ -330,13 +328,12 @@ case $opt in
 6) clear ; clearcache ;;
 7) clear ; cek-ws ;;
 8) clear ; cek ;;
-9) clear ; menu-set ;;
-10) clear ; certv2ray ;;
+9) clear ; passwd ;;
+10) clear ; auto-reboot ;;
 11) clear ; status ;;
 12) clear ; reboot ;;
 13) clear ; restart ;;
-14) clear ; passwd ;;
-15) clear ; auto-reboot ;;
-16) clear ; about ;;
+14) clear ; menu-set ;;
+15) clear ; certv2ray ;;
 x) exit ;;
 esac
