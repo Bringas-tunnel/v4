@@ -1,4 +1,18 @@
-#!/bin/bash
+#!/bin/bash 
+ # ========================================= 
+ vlx=$(grep -c -E "^#& " "/etc/xray/config.json") 
+ let vla=$vlx/2
+ vmc=$(grep -c -E "^### " "/etc/xray/config.json") 
+ let vma=$vmc/2 
+ ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)" 
+ trx=$(grep -c -E "^#! " "/etc/xray/config.json") 
+ let tra=$trx/2 
+ ssx=$(grep -c -E "^## " "/etc/xray/config.json") 
+ let ssa=$ssx/2 
+ COLOR1='\033[0;35m' 
+ COLOR2='\033[0;39m' 
+ clear
+
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/Bringas-tunnel/permission/main/ipmini > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
@@ -273,8 +287,13 @@ echo -e "\e[37m SERVER        \e[0m: \033[1;32m $ISP ${NC}"
 echo -e "\e[37m DOMAIN        \e[0m: \033[1;32m $domain ${NC}"	
 echo -e "\e[37m IP VPS        \e[0m: \033[1;32m $IPVPS ${NC}"	
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
+echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}" 
+echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  $COLOR1" 
+echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC" 
+echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}" 
+echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[44;1;33m                 • MENU ACCOUNT •                \E[0m"
+echo -e " \E[44;1;33m                 • MENU ACCOUNT •             \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e " [\e[33m•1\e[0m] ssh"
 echo -e " [\e[33m•2\e[0m] vmess"      
