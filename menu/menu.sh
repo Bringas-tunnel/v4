@@ -166,7 +166,6 @@ else
 uis="${red}Free Version$NC"
 fi
 MYIP=$(curl -sS ipv4.icanhazip.com)
-echo "TUNGGU ANJIR"
 #########################
 
 # Color Validation
