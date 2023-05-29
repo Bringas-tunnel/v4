@@ -78,7 +78,7 @@ echo -e " [\e[36m•5\e[0m] Cek User Login"
 echo -e " [\e[36m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p "  select =>   "  opt
+read -p "  select ═══>   "  opt
 echo -e ""
 case $opt in
 1) clear ; add-ws ; exit ;;
@@ -88,5 +88,5 @@ case $opt in
 5) clear ; cek-ws ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
+*) echo "Salah pencet" ; menu-ssh ;;
 esac
