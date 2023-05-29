@@ -84,7 +84,7 @@ echo -e " [\e[31m•0\e[0m] \e[33mBACK TO MENU\033[0m"
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select =>  "  opt
+read -p " Select ━━━━>  "  opt
 echo -e ""
 case $opt in
 1) clear ; usernew ; exit ;;
