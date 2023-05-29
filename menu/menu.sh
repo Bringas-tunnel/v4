@@ -299,7 +299,7 @@ echo -e " [\e[33m•5\e[0m] trojan-WS"
 echo -e "\e[36m╒══════════════════════════════════════════════╕\033[0m"
 echo -e " \E[44;1;33m                 • SETTINGS •                \E[0m"
 echo -e "\e[36m╘══════════════════════════════════════════════╛\033[0m"
-echo -e " [\e[36m•6\e[0m] clear Cache Ram"
+echo -e " [\e[36m•6\e[0m] clear cache ram"
 echo -e " [\e[36m•7\e[0m] cek vmes Active$NC"
 echo -e " [\e[36m•8\e[0m] cek ssh Active$NC"
 echo -e " [\e[36m•9\e[0m] ubah pasword vps${NC}"
@@ -314,7 +314,7 @@ echo -e "\e[36m│  User     =>${NC} \033[1;32m BRINGAS FAMILY ${NC}"
 echo -e "\e[36m│  Exp      =>$NC \033[1;32m $Exp Day ${NC}"
 echo -e "\e[36m╘══════════════════════════════════════════════╛\033[0m"
 echo -e   ""
-read -p " Select =>   "  opt
+read -p " Select ═══>    "  opt
 echo -e   ""
 case $opt in
 1) clear ; menu-ssh ;;
