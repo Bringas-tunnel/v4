@@ -2,12 +2,12 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m      • PANTAU BANDWITH  •         \E[0m"
+echo -e "\E[40;1;37m      • INFO BANDWITH  •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "" 
 echo -e " [\e[36m•1\e[0m] Lihat Total Bandwith Tersisa"
 echo -e " [\e[36m•2\e[0m] Penggunaan Setiap 5 Menit"
-echo -e " [\e[36m•3\e[0m] Pnggunaan Setiap Jam"
+echo -e " [\e[36m•3\e[0m] Penggunaan Setiap Jam"
 echo -e " [\e[36m•4\e[0m] Penggunaan Setiap Hari"
 echo -e " [\e[36m•5\e[0m] Penggunaan Setiap Bulan"
 echo -e " [\e[36m•6\e[0m] Penggunaan Setiap Tahun"
@@ -20,7 +20,7 @@ echo -e " [\e[31m•x\e[0m] Keluar"
 echo -e "" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select =>   " opt
+read -p " Select ━━━>   " opt
 echo -e ""
 case $opt in
 1)
