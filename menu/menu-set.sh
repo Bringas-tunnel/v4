@@ -5,31 +5,32 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[40;1;37m          • SYSTEM MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " [\e[36m•1\e[0m] Ubah Domain"
+echo -e " [\e[36m•1\e[0m] Ubah Domain vps"
 echo -e " [\e[36m•2\e[0m] Ubah Port"
-echo -e " [\e[36m•3\e[0m] Webmin Menu"
-echo -e " [\e[36m•4\e[0m] Speedtest"
-echo -e " [\e[36m•5\e[0m] Tentang Script"
-echo -e " [\e[36m•6\e[0m] Atur Reboot"
-echo -e " [\e[36m•7\e[0m] Restart Service"
-echo -e " [\e[36m•8\e[0m] Ubah Banner"
-echo -e " [\e[36m•9\e[0m] Cek Bandwith"
+echo -e " [\e[36m•3\e[0m] ubah banner"
+echo -e " [\e[36m•4\e[0m] Restart service"
+echo -e " [\e[36m•5\e[0m] cek bandwith"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e " [\e[36m•6\e[0m] Atur waktu riset"
+echo -e " [\e[36m•7\e[0m] speedtest vps"
+echo -e " [\e[36m•8\e[0m] webmin menu"
+echo -e " [\e[36m•9\e[0m] Tentang Script"
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e   ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select =>  " opt
+read -p " Select ━━━>   " opt
 echo -e ""
 case $opt in
 1) clear ; menu-domain ; exit ;;
 2) clear ; port-change ; exit ;;
-3) clear ; menu-webmin ; exit ;;
-4) clear ; speedtest ; exit ;;
-5) clear ; about ; exit ;;
+3) clear ; nano /etc/issue.net ; exit ;;  #ssh-vpn banner.conf
+4) clear ; restart ; exit ;;
+5) clear ; bw ; exit ;;
 6) clear ; auto-reboot ; exit ;;
-7) clear ; restart ; exit ;;
-8) clear ; nano /etc/issue.net ; exit ;; #ssh-vpn banner.conf
-9) clear ; bw ; exit ;;
+7) clear ; speedtest ; exit ;;
+8) clear ; menu-webmin ; exit ;; 
+9) clear ; about ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "salah pencet taiii" ; sleep 1 ; menu-set ;;
