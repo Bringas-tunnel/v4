@@ -275,7 +275,7 @@ else
     fi
 clear
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[44;1;33m           ⇱ BRINGAS FAMILY ⇲                 \E[0m"
+echo -e " \E[44;1;33m           ⇱ 𝐁𝐑𝐈𝐍𝐆𝐀𝐒 𝐓𝐔𝐍𝐍𝐄𝐋 ⇲                 \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "    [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
