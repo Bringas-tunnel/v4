@@ -299,9 +299,9 @@ echo -e " [\e[33m•4\e[0m] 𝗧𝗥𝗢𝗝𝗔𝗡-go"
 echo -e " [\e[33m•5\e[0m] 𝗧𝗥𝗢𝗝𝗔𝗡-ws"
 echo -e "\e[36m★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★\033[0m"
 echo -e " [\e[36m•6\e[0m] clear cache ram"       "[\e[36m10\e[0m] set waktu reboot${NC}"
-echo -e " [\e[36m•7\e[0m] cek vmes Active$NC"    "[\e[36m11\e[0m] cek Running${NC}"
-echo -e " [\e[36m•8\e[0m] cek ssh Active$NC"          "[\e[36m12\e[0m] reboot X-Ray${NC}"
-echo -e " [\e[36m•9\e[0m] ubah pasword vps${NC}""[\e[36m14\e[0m] settings menu${NC}"
+echo -e " [\e[36m•7\e[0m] Restart service$NC"    "[\e[36m11\e[0m] cek Running${NC}"
+echo -e " [\e[36m•8\e[0m] cek ssh Active$NC"            "[\e[36m12\e[0m] reboot X-Ray${NC}"
+echo -e " [\e[36m•9\e[0m] ubah pasword vps${NC}""[\e[36m13\e[0m] Menu settings${NC}"
 echo -e "\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\033[0m"
 echo -e "\e[36m│  𝐂𝐥𝐢𝐞𝐧𝐭 ━>$NC\033[1;32m$Name ${NC}"
 echo -e "\e[36m│  𝐔𝐬𝐞𝐫  ━>${NC}\033[1;32m BRINGAS TUNNEL ${NC}"
@@ -317,13 +317,12 @@ case $opt in
 4) clear ; menu-trgo ;;
 5) clear ; menu-trojan ;;
 6) clear ; clearcache ;;
-7) clear ; cek-ws ;;
+7) clear ; restart ;;
 8) clear ; cek ;;
 9) clear ; passwd ;;
 10) clear ; auto-reboot ;;
 11) clear ; status ;;
 12) clear ; reboot ;;
-13) clear ; restart ;;
-14) clear ; menu-set ;;
+13) clear ; menu-set ;;
 x) exit ;;
 esac
