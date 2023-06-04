@@ -66,11 +66,9 @@ if [ "" = "$PKG_OK" ]; then
   echo -e "[ ${tyblue}NOTES${NC} ] 2. apt upgrade -y"
   echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
   echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
-  sleep 1
-  echo ""
+  echo "kata bringas tunggu............."
   sleep 1
   echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
-  sleep 1
   echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
   echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
   read
@@ -193,7 +191,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ Script by : BRINGAS FAMILY ]-===================="
+echo "=====================-[ Created => BRINGAS FAMILY ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
