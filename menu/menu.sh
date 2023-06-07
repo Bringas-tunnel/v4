@@ -281,7 +281,7 @@ echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_ngi
 echo -e "\e[33m╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m"
 echo -e "\e[37m IP VPS        \e[0m★ \033[1;33m $IPVPS ${NC}"
 echo -e "\e[37m DOMAIN        \e[0m★ \033[1;33m $domain ${NC}"
-echo -e "\e[37m NS DOMAIN        \e[0m★ \033[1;33m $(cat /root/nsdomain) ${NC}"
+echo -e "\e[37m NS DOMAIN     \e[0m★ \033[1;33m $(cat /root/nsdomain) ${NC}"
 echo -e "\e[37m RAM           \e[0m★ \033[1;33m $tram MB ${NC}"
 echo -e "\e[37m WHATSAPP      \e[0m★ \033[1;36m 085955333616"
 echo -e "\e[33m╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m" 
