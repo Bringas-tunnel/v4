@@ -70,7 +70,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[40;1;37m       • SSH MENU •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " [\e[33m•1\e[0m] Ceeate ssh" | lolcat
+echo -e " [\e[33m•1\e[0m] Create ssh" | lolcat
 echo -e " [\e[33m•2\e[0m] Create trial" | lolcat
 echo -e " [\e[33m•3\e[0m] Renew ssh" | lolcat
 echo -e " [\e[33m•4\e[0m] Delet ssh" | lolcat
