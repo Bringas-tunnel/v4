@@ -318,7 +318,7 @@ case $opt in
 4) clear ; menu-trgo ;;
 5) clear ; menu-trojan ;;
 6) clear ; clearcache ;;
-7) clear ; restart ;;
+7) clear ; restarts ;;
 8) clear ; cek ;;
 9) clear ; passwd ;;
 10) clear ; auto-reboot ;;
