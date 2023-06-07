@@ -44,72 +44,77 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 
 if [[ ! -z "${PID}" ]]; then
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m            TRIAL SSH              \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Username : $Login"
-echo -e "Password : $Pass"
-echo -e "Expired On : $exp"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "IP : $IP"
-echo -e "Host : $domen"
-echo -e "OpenSSH : $opensh"
-echo -e "Dropbear: $db"
-echo -e "SSH-WS : $portsshws"
-echo -e "SSH-SSL-WS : $wsssl"
-echo -e "SSL/TLS : $ssl"
-echo -e "SSH-UDP : 56-65545"
-echo -e "Port Squid : $sqd"
-echo -e "OHP SSH : $OhpSSH"
-echo -e "OHP Dropbear : $OhpDB"
-echo -e "OHP OpenVPN : $OhpOVPN"
-echo -e "UDPGW  : 7100-7300"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-#echo -e "OpenVPN Config : http://$IP:81/"
-#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Payload WSS"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m        𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡           \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
+echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
+echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m         𝗦𝗘𝗥𝗩𝗘𝗥 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡      \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
+echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
+echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
+echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-user.log
+echo -e "SSH-WS      : $portsshws" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL-WS  : $wsssl" | tee -a /etc/log-create-user.log
+echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
+echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Payload WSS" | tee -a /etc/log-create-user.log
 echo -e "
 GET wss://isi_bug_disini [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]
-"
-echo -e "Payload WS"
+" | tee -a /etc/log-create-user.log
+echo -e "Payload WS" | tee -a /etc/log-create-user.log
 echo -e "
 GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]
-"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 
 else
 
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m            TRIAL SSH              \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Username : $Login"
-echo -e "Password : $Pass"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "IP : $IP"
-echo -e "Host : $domen"
-echo -e "OpenSSH : $opensh"
-echo -e "Dropbear: $db"
-echo -e "SSH-WS : $portsshws"
-echo -e "SSH-SSL-WS : $wsssl"
-echo -e "SSL/TLS : $ssl"
-echo -e "SSH-UDP : 56-65545"
-echo -e "Port Squid : $sqd"
-echo -e "OHP SSH : $OhpSSH"
-echo -e "OHP Dropbear : $OhpDB"
-echo -e "OHP OpenVPN : $OhpOVPN"
-echo -e "UDPGW  : 7100-7300"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-#echo -e "OpenVPN Config : http://$IP:81/"
-#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Payload WSS"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m        𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡           \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
+echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
+echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m         𝗦𝗘𝗥𝗩𝗘𝗥 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡      \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
+echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
+echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
+echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
+echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
+echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
+echo -e "SlowDNS     : 53,5300,443" 
+echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "SSH-80      : $domen:80@$Login:$Pass"
+echo -e "SSH-443     : $domen:443@$Login:$Pass"
+echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "SETING-UDP  : $domen:1-65535@$Login:$Pass"
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Expired On     : $exp" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Payload WSS" | tee -a /etc/log-create-user.log
 echo -e "
 GET wss://isi_bug_disini [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]
-"
-echo -e "Payload WS"
+" | tee -a /etc/log-create-user.log
+echo -e "Payload WS" | tee -a /etc/log-create-user.log
 echo -e "
 GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]
-"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
