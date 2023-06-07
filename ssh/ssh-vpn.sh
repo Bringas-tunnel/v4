@@ -274,7 +274,7 @@ cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-vmess.sh"
-wget -O menu-vlesss "https://raw.githubusercontent.com/Bringas-tunnel/v4/menu/menu-vlesss.sh"
+wget -O menu-vles "https://raw.githubusercontent.com/Bringas-tunnel/v4/menu/menu-vles.sh"
 wget -O running "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-trgo.sh"
@@ -325,7 +325,7 @@ wget -O jam "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/jam.sh"
 chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
-chmod +x menu-vlesss
+chmod +x menu-vles
 chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
