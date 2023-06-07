@@ -4,22 +4,19 @@ clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37m          • SYSTEM MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
 echo -e " [\e[36m•1\e[0m] \e[36mUbah Domain vps\033[0m"
 echo -e " [\e[36m•2\e[0m] \e[36mUbah Port\033[0m"
 echo -e " [\e[36m•3\e[0m] \e[36mUbah banner\033[0m"
 echo -e " [\e[36m•4\e[0m] \e[36mRestart service\033[0m"
 echo -e " [\e[36m•5\e[0m] \e[36mCek bandwith\033[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " [\e[36m•6\e[0m] \e[36mAtur waktu riset\033[0m"
 echo -e " [\e[36m•7\e[0m] \e[36mSpeedtest vps\033[0m"
 echo -e " [\e[36m•8\e[0m] \e[36mWebmin menu\033[0m"
 echo -e " [\e[36m•9\e[0m] \e[36mTentang Script\033[0m"
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " pilih ➡  " opt
+read -p " >>>>>>>   " opt
 echo -e ""
 case $opt in
 1) clear ; menu-domain ; exit ;;
