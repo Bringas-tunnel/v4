@@ -69,7 +69,7 @@ echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 #echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
 #echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Payload WSS" | tee -a /etc/log-create-user.log
+echo -e "Payload ws ssl" | tee -a /etc/log-create-user.log
 echo -e "
 GET wss://[host] [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
