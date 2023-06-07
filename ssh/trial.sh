@@ -2,9 +2,13 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
+clear
+# Getting
 
-
-
+sldomain=$(cat /root/nsdomain)
+cdndomain=$(cat /root/awscdndomain)
+slkey=$(cat /etc/slowdns/server.pub)
+clear
 
 cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
 if [ "$cekray" = "XRAY" ]; then
