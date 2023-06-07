@@ -274,14 +274,14 @@ cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/Bringas-tunnel/v4/menu/menu-vless.sh"
+wget -O menu-vlesss "https://raw.githubusercontent.com/Bringas-tunnel/v4/menu/menu-vlesss.sh"
 wget -O running "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-trojan.sh"
 
 # menu ssh ovpn
-wget -O menu-ssh "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-ssh.sh"
+wget -O menu-sshh "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-sshh.sh"
 wget -O usernew "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/trial.sh"
 wget -O renew "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/renew.sh"
@@ -325,13 +325,13 @@ wget -O jam "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/jam.sh"
 chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
-chmod +x menu-vless
+chmod +x menu-vlesss
 chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
 chmod +x menu-trojan
 
-chmod +x menu-ssh
+chmod +x menu-sshh
 chmod +x usernew
 chmod +x trial
 chmod +x renew
