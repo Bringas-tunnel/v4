@@ -271,14 +271,14 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
-wget -O menu "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-trial.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-vless.sh"
+wget -O menu-vmess "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-vmess.sh"
+wget -O menu-vless "https://raw.githubusercontent.com/Bringas-tunnel/v4/menu/menu-vless.sh"
 wget -O running "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-trgo.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-trojan.sh"
+wget -O menu-trojan "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-trojan.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-ssh.sh"
