@@ -64,21 +64,20 @@ else
 red "Permission Denied!"
 exit 0
 fi
-
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m       • V2RAY MENU •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " [\e[36m•1\e[0m] buat v2ray"
-echo -e " [\e[36m•2\e[0m] buat trial"
-echo -e " [\e[36m•3\e[0m] Ubah V2ray"
-echo -e " [\e[36m•4\e[0m] delet V2ray"
-echo -e " [\e[36m•5\e[0m] Cek User Login"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
+echo -e "\E[40;1;37m       • V2RAY MENU •       \E[0m"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
+echo -e " [\e[36m•1\e[0m] \e[1;36mCreate v2ray\033[0m"
+echo -e " [\e[36m•2\e[0m] \e[1;36mCreate trial\033[0m"
+echo -e " [\e[36m•3\e[0m] \e[1;36mXtendd V2ray\033[0m"
+echo -e " [\e[36m•4\e[0m] \e[1;36mDelete V2ray\033[0m"
+echo -e " [\e[36m•5\e[0m] \e[1;36Cek User Login\033[0m"
 echo -e " [\e[36m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
-read -p "  select ═══>   "  opt
+read -p "  >>>>>>>   "  opt
 echo -e ""
 case $opt in
 1) clear ; add-ws ; exit ;;
