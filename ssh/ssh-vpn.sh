@@ -294,7 +294,7 @@ wget -O ceklim "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/cek
 wget -O tendang "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/tendang.sh"
 
 # menu system
-wget -O menu-set "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-set.sh"
+wget -O menu-set "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-set.sh"
 wget -O menu-domain "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-domain.sh"
 wget -O add-host "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/add-host.sh"
 wget -O port-change "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/port/port-change.sh"
