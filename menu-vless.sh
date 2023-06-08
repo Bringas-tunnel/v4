@@ -106,7 +106,7 @@ export NC='\033[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 
 clear
-echo -e "\e[1;37m𝙑𝙇𝙀𝙎𝙎 𝙈𝙀𝙉𝙐 \033[0m"
+echo -e "\e[1;37mVLESS MENU\033[0m"
 echo -e ""
 echo -e "      ${BICyan}[${BIWhite}•1${BICyan}] Create Vless"
 echo -e "      ${BICyan}[${BIWhite}•2${BICyan}] Create Vless"
