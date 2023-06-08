@@ -1,23 +1,23 @@
 #!/bin/bash
 #Script UdpCustom 2023
-#Script By MARDHEX
-#https://t.me/mdxdev
+#Script By BRINGAS-family
+
 cd
 rm -rf /root/udp
 mkdir -p /root/udp
 # install udp-custom
 echo ""
 sleep 4
-echo " Proses Download Script UdpCustom........"
+echo " Download UDP - custom........" | lolcat
 sleep 4
 clear
-echo " Cecking Tool UdpCustom By Andyyuda......."
+echo " Cecking Tool UDP - custom By : Bringas-family......." | lolcat
 sleep 4
 clear
-echo " Succes Cecking Tool..........."
+echo " Succes Cecking Tool..........." | lolcat
 sleep 4
 clear
-echo " Please Waiting Proses Downloading Toll UdpCustom........"
+echo " Please Downloading Toll UdpCustom........" | lolcat
 sleep 4
 clear
 wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/udp-custom-linux-amd64" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
@@ -26,16 +26,16 @@ clear
 # install Config Default Udp
 echo ""
 sleep 4
-echo " Proses Download Script Config Default........"
+echo "\e[1;36mDownload Script UDP - custom........\033[0m"
 sleep 4
 clear
-echo " Cecking Config Default By Andyyuda......."
+echo "\e[1;36mCecking UDP - custom By : Bringas-family.......\033[0m"
 sleep 4
 clear
-echo " Succes Cecking Config Default Tool..........."
+echo "\e[1;36mSucces Cecking UDP - custom...........\033[0m"
 sleep 4
 clear
-echo " Please Waiting Proses Downloading Default Config UdpCustom........"
+echo "\e[1;32mPROCCESIING UDP - custom........\033[0m"
 sleep 4
 clear
 wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
@@ -60,7 +60,7 @@ EOF
 else
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=UDP Custom by MARDHEX
+Description=UDP Custom by BRINGAS
 
 [Service]
 User=root
