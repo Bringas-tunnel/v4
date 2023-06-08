@@ -2,29 +2,29 @@
 #Script By Mardhex
 clear
 echo -e ""
-echo -e "Downloading Certificate V2ray...!!!!!"
+echo -e "Download cert v2ray......" | lolcat
 echo -e ""
 sleep 5
 echo -e ""
 clear
-echo -e "Cecking Toll & Certificate...!!!!!!"
+echo -e "Check cert v2ray......" | lolcat
 echo -e ""
 sleep 4
 echo -e ""
 clear
-echo -e "Stoping Port 80 Only...!!!!!!"
+echo -e "Stoping Port 80 Only......" | lolcat
 echo -e ""
 sleep 3
 echo -e ""
 clear
-echo -e "Waiting Response Server...!!!!!"
+echo -e "Procces Response Server......" | lolcat
 echo -e ""
 sleep 2
 clear
 echo -e ""
-echo -e "Cecking Tool & Certificate Succes...!!,"
+echo -e "\e[1;32m[Succes]\033[0m"
 echo -e ""
-sleep 1
+sleep 2
 clear
 mkdir -p /etc/v2ray
 read -p "Masukan Domain Anda :  " domain
