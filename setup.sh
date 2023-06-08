@@ -153,7 +153,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 1
 clear
 wget https://raw.githubusercontent.com/artanodrop/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/artanodrop/v4/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/sshwss/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 #Instal slowdns
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
