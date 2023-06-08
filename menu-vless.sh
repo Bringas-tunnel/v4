@@ -104,22 +104,19 @@ export LIGHT='\033[0;37m'
 export NC='\033[0m'
 
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
 
 clear
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}VLESS ${NC}"
+echo -e "           ${BIWhite}${UWhite}VLESS ${NC}"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create Account XRAY Vless Websocket  "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account XRAY Vless   "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Extending Account XRAY Vless Active "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Delete Account XRAY Vless Websocket    "
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Check User Login XRAY Vless     "
-
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e "       ${BICyan}[${BIWhite}•1${BICyan}] Create Vless"
+echo -e "       ${BICyan}[${BIWhite}•2${BICyan}] Create Vless"
+echo -e "       ${BICyan}[${BIWhite}•3${BICyan}] Xtends vless"
+echo -e "       ${BICyan}[${BIWhite}•4${BICyan}] Delete Vless"
+echo -e "       ${BICyan}[${BIWhite}•5${BICyan}] Check Login Vless"
+echo -e "       ${BICyan}[${BIWhite}•0${BICyan}] Back To Menu"
+echo -e "    ──────────────────────────────────────────────" | lolcat
 echo ""
-read -p " Select menu :  "  opt
+read -p " >>>>>>  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-vless ; exit ;;
