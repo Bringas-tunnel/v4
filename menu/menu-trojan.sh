@@ -66,7 +66,7 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear 
-echo -e "\e[1;37m𝙏𝙍𝙊𝙅𝘼𝙉-𝙬𝙨 𝙈𝙀𝙉𝙐 \033[0m"
+echo -e "\e[1;37mTROJAN-WS MENU\033[0m"
 echo -e ""
 echo -e "       [\e[1;37m•1\e[0m] \e[1;36mCreate Trojan\033[0m"
 echo -e "       [\e[1;37m•2\e[0m] \e[1;36mCreate Trial\033[0m"
