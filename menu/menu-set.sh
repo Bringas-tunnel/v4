@@ -13,7 +13,7 @@ echo -e "         [\e[1;37m•7\e[0m] \e[1;36mSpeedtest vps\033[0m"
 echo -e "         [\e[1;37m•8\e[0m] \e[1;36mWebmin menu\033[0m"
 echo -e "         [\e[1;37m•9\e[0m] \e[1;36mTentang Script\033[0m"
 echo -e "         [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
-echo -e "       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
+echo -e "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
 read -p " >>>   " opt
 echo -e ""
