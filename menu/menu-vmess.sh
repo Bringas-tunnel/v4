@@ -66,7 +66,7 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "V2RAY MENU" | lolcat
+echo -e "\e[1;37mᐯ2ᖇᗩY ᗰEᑎᑌ\033[0m"
 echo -e ""
 echo -e "        [\e[36m•1\e[0m] \e[1;36mCreate v2ray\033[0m"
 echo -e "        [\e[36m•2\e[0m] \e[1;36mCreate trial\033[0m"
