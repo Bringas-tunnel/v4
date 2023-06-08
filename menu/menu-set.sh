@@ -21,7 +21,7 @@ case $opt in
 1) clear ; menu-domain ; exit ;;
 2) clear ; port-change ; exit ;;
 3) clear ; nano /etc/issue.net ; exit ;;  #ssh-vpn banner.conf
-4) clear ; restart ; exit ;;
+4) clear ; restarts ; exit ;;
 5) clear ; bw ; exit ;;
 6) clear ; auto-reboot ; exit ;;
 7) clear ; speedtest ; exit ;;
