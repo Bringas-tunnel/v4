@@ -66,7 +66,7 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "\e[1;37m𝙑𝙈𝙀𝙎𝙎 𝙈𝙀𝙉𝙐 \033[0m"
+echo -e "\e[1;37mVMESS MENU\033[0m"
 echo -e ""
 echo -e "        [\e[1;37m•1\e[0m] \e[1;36mCreate v2ray\033[0m"
 echo -e "        [\e[1;37m•2\e[0m] \e[1;36mCreate trial\033[0m"
