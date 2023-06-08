@@ -106,17 +106,17 @@ export NC='\033[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 
 clear
-echo -e "           ${BIWhite}${UWhite}VLESS ${NC}"
+echo -e "\e[1;37m𝙑𝙇𝙀𝙎𝙎 𝙈𝙀𝙉𝙐\033[0m"
 echo -e ""
-echo -e "       ${BICyan}[${BIWhite}•1${BICyan}] Create Vless"
-echo -e "       ${BICyan}[${BIWhite}•2${BICyan}] Create Vless"
-echo -e "       ${BICyan}[${BIWhite}•3${BICyan}] Xtends vless"
-echo -e "       ${BICyan}[${BIWhite}•4${BICyan}] Delete Vless"
-echo -e "       ${BICyan}[${BIWhite}•5${BICyan}] Check Login Vless"
-echo -e "       ${BICyan}[${BIWhite}•0${BICyan}] Back To Menu"
-echo -e "    ──────────────────────────────────────────────" | lolcat
+echo -e "      ${BICyan}[${BIWhite}•1${BICyan}] Create Vless"
+echo -e "      ${BICyan}[${BIWhite}•2${BICyan}] Create Vless"
+echo -e "      ${BICyan}[${BIWhite}•3${BICyan}] Xtends vless"
+echo -e "      ${BICyan}[${BIWhite}•4${BICyan}] Delete Vless"
+echo -e "      ${BICyan}[${BIWhite}•5${BICyan}] Check Login Vless"
+echo -e "      ${BICyan}[${BIYellow}•0${BICyan}] Back To Menu"
+echo -e "     ──────────────────────────────────────────────" | lolcat
 echo ""
-read -p " >>>>>>  "  opt
+read -p " >>>  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-vless ; exit ;;
