@@ -1,26 +1,24 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear 
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m         • RESTART MENU •          \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[1;37mRESTART MENU\033[0m"
 echo -e ""
-echo -e " [\e[36m•1\e[0m] Restart All Services"
-echo -e " [\e[36m•2\e[0m] Restart OpenSSH"
-echo -e " [\e[36m•3\e[0m] Restart Dropbear"
-echo -e " [\e[36m•4\e[0m] Restart Stunnel4"
-echo -e " [\e[36m•5\e[0m] Restart OpenVPN"
-echo -e " [\e[36m•6\e[0m] Restart Squid"
-echo -e " [\e[36m•7\e[0m] Restart Nginx"
-echo -e " [\e[36m•8\e[0m] Restart Badvpn"
-echo -e " [\e[36m•9\e[0m] Restart XRAY"
-echo -e " [\e[36m10\e[0m] Restart WEBSOCKET"
-echo -e " [\e[36m11\e[0m] Restart Trojan Go"
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
+echo -e " [\e[1;37m•1\e[0m] Restart All Services"
+echo -e " [\e[1;37m•2\e[0m] Restart OpenSSH"
+echo -e " [\e[1;37m•3\e[0m] Restart Dropbear"
+echo -e " [\e[1;37m•4\e[0m] Restart Stunnel4"
+echo -e " [\e[1;37m•5\e[0m] Restart OpenVPN"
+echo -e " [\e[1;37m•6\e[0m] Restart Squid"
+echo -e " [\e[1;37m•7\e[0m] Restart Nginx"
+echo -e " [\e[1;37m•8\e[0m] Restart Badvpn"
+echo -e " [\e[1;37m•9\e[0m] Restart XRAY"
+echo -e " [\e[1;37m10\e[0m] Restart WEBSOCKET"
+echo -e " [\e[1;37m11\e[0m] Restart Trojan Go"
+echo -e " [\e[1;33m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e   ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
-read -p " Select menu : " Restart
+read -p " >>>   " Restart
 echo -e ""
 sleep 1
 clear
