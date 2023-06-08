@@ -1,6 +1,6 @@
 #!/bin/bash
 #Script UdpCustom 2023
-#Script By BRINGAS-family
+#Script By MARDHEX
 
 cd
 rm -rf /root/udp
@@ -26,16 +26,16 @@ clear
 # install Config Default Udp
 echo ""
 sleep 4
-echo "\e[1;36mDownload Script UDP - custom........\033[0m"
+echo "Download Script UDP - custom........" | lolcat
 sleep 4
 clear
-echo "\e[1;36mCecking UDP - custom By : Bringas-family.......\033[0m"
+echo "Cecking UDP - custom By : Bringas-family......." | lolcat
 sleep 4
 clear
-echo "\e[1;36mSucces Cecking UDP - custom...........\033[0m"
+echo "Succes Cecking UDP - custom..........." | lolcat
 sleep 4
 clear
-echo "\e[1;32mPROCCESIING UDP - custom........\033[0m"
+echo "PROCCESIING UDP - custom........" | lolcat
 sleep 4
 clear
 wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
@@ -60,7 +60,7 @@ EOF
 else
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=UDP Custom by BRINGAS
+Description=UDP Custom by MARDHEX
 
 [Service]
 User=root
