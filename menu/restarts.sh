@@ -233,7 +233,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Pencet enter Kembali Ke Menu"
-                restart
+                restarts
                 ;;                                                                         
                 0)
                 menu
