@@ -243,7 +243,7 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 # banner /etc/issue.net
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Fikripps/Ver3/main/issue.net"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/issue.net"
 chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
