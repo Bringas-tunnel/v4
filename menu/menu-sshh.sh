@@ -66,19 +66,19 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "SSH MENU" | lolcat
+echo -e                            "SSH MENU" | lolcat
 echo -e ""
-echo -e "      [\e[33m•1\e[0m] \e[1;36mCreate ssh\033[0m"
-echo -e "      [\e[33m•2\e[0m] \e[1;36mCreate trial\033[0m"
-echo -e "      [\e[33m•3\e[0m] \e[1;36mRenew ssh\033[0m"
-echo -e "      [\e[33m•4\e[0m] \e[1;36mDelet ssh\033[0m"
-echo -e "      [\e[33m•5\e[0m] \e[1;36mCek user login\033[0m"
-echo -e "      [\e[33m•6\e[0m] \e[1;36mList user\033[0m"
-echo -e "      [\e[33m•7\e[0m] \e[1;36mDelet ssh expired\033[0m"
-echo -e "      [\e[33m•8\e[0m] \e[1;36mAuto Kill ssh\033[0m"
-echo -e "      [\e[33m•9\e[0m] Cek multilogin ssh\033[0m"
-echo -e "      [\e[36m•0\e[0m] \e[33mBACK TO MENU\033[0m"
-echo -e "   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
+echo -e "         [\e[33m•1\e[0m] \e[1;36mCreate ssh\033[0m"
+echo -e "         [\e[33m•2\e[0m] \e[1;36mCreate trial\033[0m"
+echo -e "         [\e[33m•3\e[0m] \e[1;36mRenew ssh\033[0m"
+echo -e "         [\e[33m•4\e[0m] \e[1;36mDelet ssh\033[0m"
+echo -e "         [\e[33m•5\e[0m] \e[1;36mCek user login\033[0m"
+echo -e "         [\e[33m•6\e[0m] \e[1;36mList user\033[0m"
+echo -e "         [\e[33m•7\e[0m] \e[1;36mDelet ssh expired\033[0m"
+echo -e "         [\e[33m•8\e[0m] \e[1;36mAuto Kill ssh\033[0m"
+echo -e "         [\e[33m•9\e[0m] \e[1;36mCek multilogin ssh\033[0m"
+echo -e "         [\e[36m•0\e[0m] \e[1;33mBACK TO MENU\033[0m"
+echo -e "    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
 read -p " >>>>>>  "  opt
 echo -e ""
