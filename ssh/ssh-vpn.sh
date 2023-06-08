@@ -289,7 +289,7 @@ wget -O hapus "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/hapu
 wget -O cek "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/cek.sh"
 wget -O member "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/member.sh"
 wget -O delete "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/delete.sh"
-wget -O autokill "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/autokill.sh"
+wget -O autokilll "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/autokilll.sh"
 wget -O ceklim "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/tendang.sh"
 
@@ -339,7 +339,7 @@ chmod +x hapus
 chmod +x cek
 chmod +x member
 chmod +x delete
-chmod +x autokill
+chmod +x autokilll
 chmod +x ceklim
 chmod +x tendang
 
