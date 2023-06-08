@@ -54,7 +54,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 2)
                 clear
@@ -71,7 +71,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 3)
                 clear
@@ -88,7 +88,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 4)
                 clear
@@ -105,7 +105,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 5)
                 clear
@@ -122,7 +122,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 6)
                 clear
@@ -139,7 +139,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 7)
                 clear
@@ -156,7 +156,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 8)
                 clear
@@ -174,7 +174,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 9)
                 clear
@@ -193,7 +193,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 10)
                 clear
@@ -214,7 +214,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 11)
                 clear
