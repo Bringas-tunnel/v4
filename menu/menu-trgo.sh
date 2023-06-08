@@ -66,16 +66,15 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear 
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
-echo -e "\E[40;1;37m    • MENU TROJAN-GO •     \E[0m"
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
-echo -e " [\e[36m•1\e[0m] \e[1;36mCreate TrojanGo\033[0m"
-echo -e " [\e[36m•2\e[0m] \e[1;36mCreate Trial\033[0m"
-echo -e " [\e[36m•3\e[0m] \e[1;36mXtend TrojanGo\033[0m"
-echo -e " [\e[36m•4\e[0m] \e[1;36mDelete Akun Trojan-Go\033[0m"
-echo -e " [\e[36m•5\e[0m] \e[1;36mCek Login Trojan-Go\033[0m"
-echo -e " [\e[33m•0\e[0m] \e[33mBACK TO MENU\033[0m"
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
+echo -e          "\E[40;1;37m     MENU TROJAN-GO     \E[0m"
+echo -e " "
+echo -e "         [\e[36m•1\e[0m] \e[1;36mCreate TrojanGo\033[0m"
+echo -e "         [\e[36m•2\e[0m] \e[1;36mCreate Trial\033[0m"
+echo -e "         [\e[36m•3\e[0m] \e[1;36mXtend TrojanGo\033[0m"
+echo -e "         [\e[36m•4\e[0m] \e[1;36mDelete Akun Trojan-Go\033[0m"
+echo -e "         [\e[36m•5\e[0m] \e[1;36mCek Login Trojan-Go\033[0m"
+echo -e "         [\e[33m•0\e[0m] \e[1;33mBACK TO MENU\033[0m"
+echo -e "       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
 read -p " >>>>>>>   " opt
 echo -e ""
