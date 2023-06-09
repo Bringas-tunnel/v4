@@ -293,11 +293,11 @@ echo -e "║           │Client :$NC\033[1;35m$Name${NC}"
 echo -e "║           │Xpired :$NC\033[1;35m$Exp${NC}"
 echo -e "║           └────────────────────────┘" | lolcat
 echo -e "╠════════════════════════════════════════════╣" | lolcat
-echo -e "║\e[1;37m[•1]\e[0m \e[1;33mꜱꜱʜ\033[0m        ""║\e[1;37m[06]\e[0m \e[1;36mCheck Running\033[0m"
-echo -e "║\e[1;37m[•2]\e[0m \e[1;33mᴠᴍᴇꜱꜱ\033[0m      ""║\e[1;37m[07]\e[0m \e[1;36mRestart Service$NC\033[0m"  
-echo -e "║\e[1;37m[•3]\e[0m \e[1;33mᴠʟᴇꜱꜱ\033[0m      ""║\e[1;37m[08]\e[0m \e[1;36mMenu Backup$NC\033[0m"
-echo -e "║\e[1;37m[•4]\e[0m \e[1;33mᴛʀᴏᴊᴀɴ-ɢᴏ\033[0m  ""║\e[1;37m[09]\e[0m \e[1;36mSet Pw Vps$NC\033[0m"
-echo -e "║\e[1;37m[•5]\e[0m \e[1;33mᴛʀᴏᴊᴀɴ-ᴡꜱ\033[0m  ""║\e[1;37m[10]\e[0m \e[1;36mSet Reboot${NC}\033[0m"
+echo -e "║\e[1;37m[•1]\e[0m║ \e[1;33mꜱꜱʜ\033[0m        ""║\e[1;37m[•6]\e[0m║ \e[1;36mCheck Running\033[0m"
+echo -e "║\e[1;37m[•2]\e[0m║ \e[1;33mᴠᴍᴇꜱꜱ\033[0m      ""║\e[1;37m[•7]\e[0m║ \e[1;36mRestart Service$NC\033[0m"  
+echo -e "║\e[1;37m[•3]\e[0m║ \e[1;33mᴠʟᴇꜱꜱ\033[0m      ""║\e[1;37m[•8]\e[0m║ \e[1;36mMenu Backup$NC\033[0m"
+echo -e "║\e[1;37m[•4]\e[0m║ \e[1;33mᴛʀᴏᴊᴀɴ-ɢᴏ\033[0m  ""║\e[1;37m[•9]\e[0m║ \e[1;36mSet Pw Vps$NC\033[0m"
+echo -e "║\e[1;37m[•5]\e[0m║ \e[1;33mᴛʀᴏᴊᴀɴ-ᴡꜱ\033[0m  ""║\e[1;37m[10]\e[0m║ \e[1;36mSet Reboot${NC}\033[0m"
 echo -e "╠════════════════════════════════════════════╣" | lolcat     
 echo -e "║                 \e[1;32m   0\e[0m          "
 echo -e "║                 \e[1;37m𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎${NC}\033[0m"
