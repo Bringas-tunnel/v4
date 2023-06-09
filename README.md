@@ -5,7 +5,3 @@
 ![This is an image](https://raw.githubusercontent.com/Bringas-tunnel/v4/main/r20w1678676611229.jpg)
 #BACKUP
 <pre><code>wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/update.sh && chmod +x update.sh && ./update.sh
-#
-
-
-https://github.com/Bringas-tunnel/v4/blob/main/Cuy/IMG_20220914_140658.jpg
