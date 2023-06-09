@@ -303,6 +303,7 @@ echo -e "║\e[1;36m[11]\e[0m \e[1;36m𝘾𝙚𝙠 𝙧𝙪𝙣𝙣𝙞𝙣𝙜$
 echo -e "║\e[1;36m[12]\e[0m \e[1;36m𝙍𝙚𝙗𝙤𝙤𝙩-𝙓𝙧𝙖𝙮${NC}\033[0m "
 echo -e "║\e[1;33m[13]\e[0m \e[1;33m𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎${NC}\033[0m   "
 echo -e "║\e[1;36m[14]\e[0m \e[1;36mMenu BACKUP${NC}\033[0m"
+echo -e "║\e[1;36m[15]\e[0m \e[1;36mUpdate Script${NC}\033[0m"
 echo -e "╠═════════════════════════════════════════════╣" | lolcat
 echo -e   ""
 read -p " >>>  "  opt
@@ -322,5 +323,6 @@ case $opt in
 12) clear ; reboot ;;
 13) clear ; menu-set ;;
 14) clear ; menu-backup ;;
+15) clear ; menu ;;
 x) exit ;;
 esac
