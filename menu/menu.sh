@@ -321,5 +321,6 @@ case $opt in
 11) clear ; status ;;
 12) clear ; reboot ;;
 13) clear ; menu-set ;;
+14) clear ; menu-backup ;;
 x) exit ;;
 esac
