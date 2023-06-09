@@ -289,8 +289,8 @@ echo -e "║${GREEN}  \033[0m ${BOLD}${GREEN}SSH      VMESS       VLESS      TRO
 echo -e "║${GREEN}  \033[0m ${Blue} $ssh1        $vma           $vla          $tra                  $NC" 
 echo -e "╠═════════════════════════════════════════════╣" | lolcat
 echo -e "║           ┌────────────────────────┐" | lolcat
-echo -e "║           │𝐂𝐥𝐢𝐞𝐧𝐭 :$NC\033[1;36m$Name ${NC}"
-echo -e "║           │Exp    :$NC\033[1;36m$Exp ${NC}"
+echo -e "║           │𝐂𝐥𝐢𝐞𝐧𝐭  :$NC\033[1;35m$Name ${NC}"
+echo -e "║           │Exp    :$NC\033[1;35m$Exp ${NC}"
 echo -e "║           └────────────────────────┘" | lolcat
 echo -e "╠═════════════════════════════════════════════╣" | lolcat
 echo -e "║\e[1;37m[•1]\e[0m \e[1;33mꜱꜱʜ\033[0m        "  "║\e[1;36m[06]\e[0m \e[1;36m𝘾𝙡𝙚𝙖𝙧 𝙨𝙖𝙢𝙥𝙖𝙝 𝙧𝙖𝙢\033[0m"
