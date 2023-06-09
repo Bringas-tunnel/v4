@@ -6,9 +6,6 @@
 #BACKUP
 <pre><code>wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/update.sh && chmod +x update.sh && ./update.sh
 #
-```
-![logo](https://raw.githubusercontent.com/Andyyudak1/Autoscript-vpn/main/sc.jpg
-)
-```
+
 
 https://github.com/Bringas-tunnel/v4/blob/main/Cuy/IMG_20220914_140658.jpg
