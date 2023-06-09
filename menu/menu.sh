@@ -289,8 +289,8 @@ echo -e "║${GREEN}  \033[0m ${BOLD}${GREEN}SSH      VMESS       VLESS      TRO
 echo -e "║${GREEN}  \033[0m ${Blue} $ssh1        $vma           $vla          $tra                  $NC" 
 echo -e "╠═════════════════════════════════════════════╣" | lolcat
 echo -e "║           ┌────────────────────────┐" | lolcat
-echo -e "║           │𝐂𝐥𝐢𝐞𝐧𝐭   :$NC\033[1;35m$Name${NC}"
-echo -e "║           │Exp    :$NC\033[1;35m$Exp${NC}"
+echo -e "║           │Client :$NC\033[1;35m$Name${NC}"
+echo -e "║           │Xpired :$NC\033[1;35m$Exp${NC}"
 echo -e "║           └────────────────────────┘" | lolcat
 echo -e "╠═════════════════════════════════════════════╣" | lolcat
 echo -e "║\e[1;37m[•1]\e[0m \e[1;33mꜱꜱʜ\033[0m        "  "║\e[1;36m[06]\e[0m \e[1;36m𝘾𝙡𝙚𝙖𝙧 𝙨𝙖𝙢𝙥𝙖𝙝 𝙧𝙖𝙢\033[0m"
@@ -323,6 +323,6 @@ case $opt in
 12) clear ; reboot ;;
 13) clear ; menu-set ;;
 14) clear ; menu-backup ;;
-15) clear ; menu-update ;;
+15) clear ; menu ;;
 x) exit ;;
 esac
