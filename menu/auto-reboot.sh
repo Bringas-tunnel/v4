@@ -18,9 +18,8 @@ else
 gg="AM"
 fi
 
-echo -e "\e[36m┌─────────────────────────────────────────────────┐${NC}"
-echo -e "                  ⇱ AUTOREBOOT ⇲              \E[0m"
-echo -e "\e[36m└─────────────────────────────────────────────────┘${NC}"
+echo -e "\e[1;37mAUTOREBOOT\033[0m"
+echo -e ""
 echo -e "
     ${green}Example :${NC}
     0     = 12 PM
@@ -28,14 +27,12 @@ echo -e "
     13-23 = 1 AM - 11 PM
     1-11  = 1 PM - 11 AM
 "
-echo -e "\e[36m┌─────────────────────────────────────────────────┐${NC}"
-echo ""
+echo -e "┌───────────────────────────────────┐" | lolcat
 echo -e "     ${green}Current : $aureb $gg ${NC}"
-echo -e ""
-echo -e " \e[36m└───────────────────────────────────────────────┘${NC}" 
+echo -e "└───────────────────────────────────┘" | lolcat
 
 while :; do
-  read -p "Input time auto reboot only 0 - 23 : " tr2
+  read -p "Input >>> 0 - 23 : " tr2
   [[ $tr2 =~ ^[0-9]+$ ]] || { echo -ne; continue; }
   if ((tr2 >= 0 && tr2 <= 23)); then
     echo -ne
