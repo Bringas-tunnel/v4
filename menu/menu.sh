@@ -284,14 +284,14 @@ echo -e "║\e[1;37m DOMAIN        \e[0m★ \033[1;33m $domain ${NC}"
 echo -e "║\e[1;37m NS DOMAIN     \e[0m★ \033[1;33m $(cat /root/nsdomain) ${NC}"
 echo -e "║\e[1;37m RAM           \e[0m★ \033[1;33m $tram MB ${NC}"
 echo -e "║\e[1;37m WHATSAPP      \e[0m★ \033[1;36m 085955333616"
-echo -e "║\e[1;37m C P U         \e[0m★ \033[1;35m $cpu_usage+"
+echo -e "║\e[1;37m C P U         \e[0m★ \033[1;35m $cpu_usage"
 echo -e "║\e[1;33m╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m" 
 echo -e "║${GREEN}  \033[0m ${BOLD}${GREEN}SSH      VMESS       VLESS      TROJAN$NC  $COLOR1" 
 echo -e "║${GREEN}  \033[0m ${Blue} $ssh1        $vma           $vla          $tra                  $NC" 
 echo -e "╠════════════════════════════════════════════╣" | lolcat
 echo -e "║           ┌────────────────────────┐" | lolcat
 echo -e "║           │Client :$NC\033[1;35m$Name${NC}"
-echo -e "║           │Xpired :$NC\033[1;35m$exp2${NC}"
+echo -e "║           │Xpired :$NC\033[1;35m$exp2 hari ${NC}"
 echo -e "║           └────────────────────────┘" | lolcat
 echo -e "╠════════════════════════════════════════════╣" | lolcat
 echo -e "║\e[1;37m[•1]\e[0m║ \e[1;33mꜱꜱʜ\033[0m        ""║\e[1;37m[•6]\e[0m║ \e[1;36mCheck Running\033[0m"
