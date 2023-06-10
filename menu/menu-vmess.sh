@@ -68,12 +68,12 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 echo -e "\e[1;37mVMESS MENU\033[0m"
 echo -e ""
-echo -e "        [\e[1;37m•1\e[0m] \e[1;36mCreate v2ray\033[0m"
-echo -e "        [\e[1;37m•2\e[0m] \e[1;36mCreate trial\033[0m"
-echo -e "        [\e[1;37m•3\e[0m] \e[1;36mXtendd V2ray\033[0m"
-echo -e "        [\e[1;37m•4\e[0m] \e[1;36mDelete V2ray\033[0m"
-echo -e "        [\e[1;37m•5\e[0m] \e[1;36mCek User Login\033[0m"
-echo -e "        [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
+echo -e "       [\e[1;37m•1\e[0m] \e[1;36mCreate v2ray\033[0m"
+echo -e "       [\e[1;37m•2\e[0m] \e[1;36mCreate trial\033[0m"
+echo -e "       [\e[1;37m•3\e[0m] \e[1;36mXtendd V2ray\033[0m"
+echo -e "       [\e[1;37m•4\e[0m] \e[1;36mDelete V2ray\033[0m"
+echo -e "       [\e[1;37m•5\e[0m] \e[1;36mCek User Login\033[0m"
+echo -e "       [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
 echo -e "        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
 read -p "  >>>   "  opt
