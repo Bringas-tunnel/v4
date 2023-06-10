@@ -104,7 +104,7 @@ wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Bringas-tunnel/v4/ma
 wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/menu-backup.sh" && chmod +x /usr/bin/menu-backup
 wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/backup.sh" && chmod +x /usr/bin/backup
 wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/restore.sh" && chmod +x /usr/bin/restore
-wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh" && chmod +x /usr/bin/up
+wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/up.sh" && chmod +x /usr/bin/up
 wget -O jam "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/jam.sh"
 wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/udp/udp.sh && bash udp.sh
 wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
