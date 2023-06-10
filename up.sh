@@ -100,6 +100,7 @@ wget -O acs-set "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/acs-se
 wget -O sshws "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/status.sh"
 wget https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/menu-backup.sh" && chmod +x /usr/bin/menu-backup
 wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/backup.sh" && chmod +x /usr/bin/backup
 wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/restore.sh" && chmod +x /usr/bin/restore
