@@ -306,12 +306,12 @@ echo -e   ""
 read -p " >>>  "  opt
 echo -e   ""
 case $opt in
-1) clear ; menu-ssh ;;
+1) clear ; menu-sshh ;;
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
 4) clear ; menu-trgo ;;
 5) clear ; menu-trojan ;;
-6) clear ; status;;
+6) clear ; status ;;
 7) clear ; restarts ;;
 8) clear ; menu-backup ;;
 9) clear ; passwd ;;
