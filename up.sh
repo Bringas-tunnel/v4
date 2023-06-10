@@ -53,6 +53,7 @@ rm -rf up
 # download script
 cd /usr/bin
 # menu
+wget -O up "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/up.sh"
 wget -O menu "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-vmess.sh"
