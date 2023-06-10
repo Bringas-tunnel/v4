@@ -74,7 +74,7 @@ echo -e "       [\e[1;37m•3\e[0m] \e[1;36mXtend Trojan\033[0m"
 echo -e "       [\e[1;37m•4\e[0m] \e[1;36mDelete Akun Trojan\033[0m"
 echo -e "       [\e[1;37m•5\e[0m] \e[1;36mCek user Trojan\033[0m"
 echo -e "       [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
-echo -e "       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
+echo -e "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
 read -p " >>>   " opt
 echo -e ""
