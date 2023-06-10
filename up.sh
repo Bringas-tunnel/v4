@@ -105,6 +105,7 @@ wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/Andyyuda/ver3/main
 wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/Andyyuda/ver3/main/backup/restore.sh" && chmod +x /usr/bin/restore
 wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/ver3/main/up.sh" && chmod +x /usr/bin/up
 wget -O jam "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/jam.sh"
+wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/udp/udp.sh && bash udp.sh
 
 chmod +x menu
 chmod +x menu-trial
