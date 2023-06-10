@@ -321,6 +321,7 @@ wget -O backup "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/backup/
 wget -O restore "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/backup/restore.sh"
 
 wget -O jam "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/jam.sh"
+wget -O up "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/up.sh"
 
 chmod +x menu
 chmod +x menu-trial
