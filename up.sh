@@ -110,6 +110,7 @@ wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/udp/udp.sh && bash
 wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 
 chmod +x menu
+chmod +x up
 chmod +x menu-trial
 chmod +x menu-vmess
 chmod +x menu-vless
