@@ -295,7 +295,7 @@ echo -e "║           │Client :$NC\033[1;35m$Name${NC}"
 echo -e "║           │Xpired :$NC\033[1;35m$exp2 hari ${NC}"
 echo -e "║           └────────────────────────┘" | lolcat
 echo -e "╠════════════════════════════════════════════╣" | lolcat
-echo -e "║\e[1;37m[•1]\e[0m║ \e[1;33mꜱꜱʜ\033[0m        ""║\e[1;37m[•6]\e[0m║ \e[1;36mCheck Running\033[0m"ate Scriptm"
+echo -e "║\e[1;37m[•1]\e[0m║ \e[1;33mꜱꜱʜ\033[0m        ""║\e[1;37m[•6]\e[0m║ \e[1;36mCheck Running\033[0m"ini
 echo -e "║\e[1;37m[•2]\e[0m║ \e[1;33mᴠᴍᴇꜱꜱ\033[0m      ""║\e[1;37m[•7]\e[0m║ \e[1;36mRestart Service$NC\033[0m"  
 echo -e "║\e[1;37m[•3]\e[0m║ \e[1;33mᴠʟᴇꜱꜱ\033[0m      ""║\e[1;37m[•8]\e[0m║ \e[1;36mMenu Backup$NC\033[0m"
 echo -e "║\e[1;37m[•4]\e[0m║ \e[1;33mᴛʀᴏᴊᴀɴ-ɢᴏ\033[0m  ""║\e[1;37m[•9]\e[0m║ \e[1;36mSet Pw Vps$NC\033[0m"
