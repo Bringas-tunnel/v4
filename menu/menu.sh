@@ -292,7 +292,7 @@ echo -e "║${GREEN}  \033[0m ${Blue} $ssh1        $vma           $vla          
 echo -e "╠════════════════════════════════════════════╣" | lolcat
 echo -e "║           ┌────────────────────────┐" | lolcat
 echo -e "║           │Client :$NC\033[1;35m$Name${NC}"
-echo -e "║           │Xpired :$NC\033[1;35m$exp hari ${NC}"
+echo -e "║           │Xpired :$NC\033[1;35m$Exp hari ${NC}"
 echo -e "║           └────────────────────────┘" | lolcat
 echo -e "╠════════════════════════════════════════════╣" | lolcat
 echo -e "║\e[1;37m[•1]\e[0m║ \e[1;33mꜱꜱʜ\033[0m        ""║\e[1;37m[•6]\e[0m║ \e[1;36mCheck Running\033[0m"
