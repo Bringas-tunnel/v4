@@ -285,7 +285,7 @@ echo -e "║\e[1;32m NS DOMAIN     \e[0m★ \033[1;33m $(cat /root/nsdomain) ${N
 echo -e "║\e[1;32m RAM           \e[0m★ \033[1;33m $tram MB ${NC}"
 echo -e "║\e[1;32m CPU           \e[0m★ \033[1;36m $cpu_usage"
 echo -e "║\e[1;32m CPU CORES     \e[0m★ \033[1;36m $cores"
-echo -e "║\e[1;32m WHATSAPP      \e[0m★ \033[1;35m 085955333616"
+echo -e "║\e[1;32m WHATSAPP      \e[0m★ \033[1;36m 085955333616"
 echo -e "║${red}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}" 
 echo -e "║${green}SSH      VMESS       VLESS      TROJAN$NC  $COLOR1" 
 echo -e "║${cyan} $ssh1        $vma           $vla          $tra                  $NC" 
