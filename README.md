@@ -8,4 +8,4 @@
 
 ![This is an image]
 # Sc By Bringas-tunnel
-<pre><code>wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/up.sh && chmod +x up.sh && ./up.sh
+<pre><code> wget https://raw.githubusercontent.com/Bringas-tunnel/v4/main/up.sh && chmod +x up.sh && ./up.sh
