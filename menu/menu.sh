@@ -207,7 +207,7 @@ orange='\033[1;33m'
 blue='\033[1;34m'
 ungu='\033[1;35m'
 cyan='\033[1;36m'
-white='\033[0;37m'
+white='\033[1;37m'
 # VPS Information
 #Domain
 domain=$(cat /etc/xray/domain)
@@ -316,14 +316,16 @@ echo -e "║${cyan}          │Client :${NC}\033[1;35m$Name${NC}"
 echo -e "║${cyan}          │Xpired :${NC}\033[1;35m$Exp${NC}"
 echo -e "║${cyan}          └────────────────────────┘${NC}"
 echo -e "${white}╠════════════════════════════════════════════╣${NC}"
+echo -e "║${red_background}             DAFTAR  MENU                   ${NC}"
+echo -e "${white}╠════════════════════════════════════════════╣${NC}"
 echo -e "║${white}[•1]${NC}║ ${kuning}ssh${NC}         ""║${white}[•6]${NC}║ ${kuning}Check Running${NC}"
 echo -e "║${white}[•2]${NC}║ ${kuning}vmess${NC}       ""║${white}[•7]${NC}║ ${kuning}Restart Service${NC}"  
 echo -e "║${white}[•3]${NC}║ ${kuning}vless${NC}       ""║${white}[•8]${NC}║ ${kuning}Menu Backup${NC}"
 echo -e "║${white}[•4]${NC}║ ${kuning}trojan-go${NC}   ""║${white}[•9]${NC}║ ${kuning}Set Pw Vps${NC}"
 echo -e "║${white}[•5]${NC}║ ${kuning}trojan-ws${NC}   ""║${white}[10]${NC}║ ${kuning}Set Reboot${NC}"
 echo -e "${white}╠════════════════════════════════════════════╣${NC}"    
-echo -e "║                 ${green}   0 ${NC}          "
-echo -e "║                 ${green_background}MENU TAMBAHAN${NC}"
+echo -e "║                 ${green}   11 ${NC}          "
+echo -e "║              ${red_background}MENU TAMBAHAN${NC}"
 echo -e "${white}╠════════════════════════════════════════════╣${NC}"
 echo -e   "${kuning}"
 read -p " >>>>  "  opt
@@ -339,7 +341,6 @@ case $opt in
 8) clear ; menu-backup ;;
 9) clear ; passwd ;;
 10) clear ; auto-reboot ;;
-11) clear ; up ;;
-0) clear ; menu-set ;;
+11) clear ; menu-set ;;
 x) exit ;;
 esac
