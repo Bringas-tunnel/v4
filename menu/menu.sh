@@ -278,7 +278,7 @@ else
     fi
 clear
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
-echo -e "║${red_background}            ★ 𝐁𝐑𝐈𝐍𝐆𝐀𝐒 𝐓𝐔𝐍𝐍𝐄𝐋 ★               ${NC}"
+echo -e "║${red_background}            ★ 𝐁𝐑𝐈𝐍𝐆𝐀𝐒 𝐓𝐔𝐍𝐍𝐄𝐋 ★              ${NC}"
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
 echo -e "║ [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "║${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
@@ -292,7 +292,7 @@ echo -e "║\e[1;32m CPU           \e[0m★ \033[1;36m $cpu_usage"
 echo -e "║\e[1;32m CPU CORES     \e[0m★ \033[1;36m $cores"
 echo -e "║\e[1;32m WHATSAPP      \e[0m★ \033[1;36m 085955333616"
 echo -e "║${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}" 
-echo -e "║             ${red_background}ACCOUNT INFORMATION ${NC} 
+echo -e "║           ${red_background}ACCOUNT INFORMATION ${NC}" 
 echo -e "║${green}SSH      VMESS       VLESS      TROJAN$NC  $COLOR1" 
 echo -e "║${cyan} $ssh1        $vma           $vla          $tra                  $NC" 
 echo -e "${white}╠════════════════════════════════════════════╣${NC}"
