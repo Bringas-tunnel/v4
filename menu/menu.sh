@@ -256,7 +256,21 @@ freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
 tram=$( free -m | awk 'NR==2 {print $2}' )
 uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
-# // SSH Websocket Proxy
+# // SSH Websocket Proxy 
+#Warna Teks Background
+Bhijau="\033[4;32m"
+Bmerah="\033[4;31m"
+Bkuning="\033[4;33m"
+Bputih="\033[4;37m"
+Bbiru="\033[4;34m"
+Bungu="\033[4;35m"
+Bcyan="\033[4;36m"
+Bhitam="\033[4;30m"
+#Warna Text 
+kuning="\e[1;33m"
+hijau="\e[1;32m"
+cyan="\e[1;36m"
+#Status running 
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
     status_ws_epro="${GREEN}ON${NC}"
@@ -284,15 +298,15 @@ echo -e "║ [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_
 echo -e "║${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
 echo -e "║${red_background}              SYSTEM OPERATING              ${NC}"
 echo -e "║${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
-echo -e "║\e[1;32m IP VPS        \e[0m★ \033[1;33m $IPVPS ${NC}"
-echo -e "║\e[1;32m DOMAIN        \e[0m★ \033[1;33m $domain ${NC}"
-echo -e "║\e[1;32m NS DOMAIN     \e[0m★ \033[1;33m $(cat /root/nsdomain) ${NC}"
-echo -e "║\e[1;32m RAM           \e[0m★ \033[1;33m $tram MB ${NC}"
-echo -e "║\e[1;32m CPU           \e[0m★ \033[1;36m $cpu_usage"
-echo -e "║\e[1;32m CPU CORES     \e[0m★ \033[1;36m $cores"
-echo -e "║\e[1;32m WHATSAPP      \e[0m★ \033[1;36m 085955333616"
+echo -e "║${kuning} IP VPS        \e[0m★ \033[1;33m $IPVPS ${NC}"
+echo -e "║${kuning} DOMAIN        \e[0m★ \033[1;33m $domain ${NC}"
+echo -e "║${kuning} NS DOMAIN     \e[0m★ \033[1;33m $(cat /root/nsdomain) ${NC}"
+echo -e "║${kuning} RAM           \e[0m★ \033[1;33m $tram MB ${NC}"
+echo -e "║${kuning} CPU           \e[0m★ \033[1;36m $cpu_usage"
+echo -e "║${kuning} CPU CORES     \e[0m★ \033[1;36m $cores"
+echo -e "║${cyan}   WHATSAPP      \e[0m★ \033[1;36m 085955333616"
 echo -e "║${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}" 
-echo -e "║${red_background}            ACCOUNT INFORMATION              ${NC}"
+echo -e "║${red_background}            ACCOUNT INFORMATION             ${NC}"
 echo -e "║${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
 echo -e "║  ${green}SSH      VMESS       VLESS      TROJAN$NC  $COLOR1" 
 echo -e "║  ${white} $ssh1        $vma           $vla          $tra                  $NC" 
@@ -302,11 +316,11 @@ echo -e "║${cyan}          │Client :$NC\033[1;35m$Name${NC}"
 echo -e "║${cyan}          │Xpired :$NC\033[1;35m$Exp${NC}"
 echo -e "║${cyan}          └────────────────────────┘${NC}"
 echo -e "${white}╠════════════════════════════════════════════╣${NC}"
-echo -e "║\e[1;37m[•1]\e[0m║ \e[1;33mꜱꜱʜ\033[0m        ""║\e[1;37m[•6]\e[0m║ \e[1;36mCheck Running${NC}"
-echo -e "║\e[1;37m[•2]\e[0m║ \e[1;33mᴠᴍᴇꜱꜱ\033[0m      ""║\e[1;37m[•7]\e[0m║ \e[1;36mRestart Service${NC}"  
-echo -e "║\e[1;37m[•3]\e[0m║ \e[1;33mᴠʟᴇꜱꜱ\033[0m      ""║\e[1;37m[•8]\e[0m║ \e[1;36mMenu Backup${NC}"
-echo -e "║\e[1;37m[•4]\e[0m║ \e[1;33mᴛʀᴏᴊᴀɴ-ɢᴏ\033[0m  ""║\e[1;37m[•9]\e[0m║ \e[1;36mSet Pw Vps${NC}"
-echo -e "║\e[1;37m[•5]\e[0m║ \e[1;33mᴛʀᴏᴊᴀɴ-ᴡꜱ\033[0m  ""║\e[1;37m[10]\e[0m║ \e[1;36mSet Reboot${NC}"
+echo -e "║${white}[•1]${NC}║ ${kuming}ꜱꜱʜ${NC}        ""║\e[1;37m[•6]\e[0m║ \e[1;36mCheck Running${NC}"
+echo -e "║${white}[•2]${NC}║ ${kuning}ᴠᴍᴇꜱꜱ${NC}      ""║\e[1;37m[•7]\e[0m║ \e[1;36mRestart Service${NC}"  
+echo -e "║${white}[•3]${NC}║ ${kuning}ᴠʟᴇꜱꜱ${NC}      ""║\e[1;37m[•8]\e[0m║ \e[1;36mMenu Backup${NC}"
+echo -e "║${white}[•4]${NC}║ ${kuning}ᴛʀᴏᴊᴀɴ-ɢᴏ${NC}  ""║\e[1;37m[•9]\e[0m║ \e[1;36mSet Pw Vps${NC}"
+echo -e "║${white}[•5]${NC}║ ${kuning}ᴛʀᴏᴊᴀɴ-ᴡꜱ${NC}  ""║\e[1;37m[10]\e[0m║ \e[1;36mSet Reboot${NC}"
 echo -e "${white}╠════════════════════════════════════════════╣${NC}"    
 echo -e "║                 ${green}   0 ${NC}          "
 echo -e "║                 ${white}𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎 ${NC}"
