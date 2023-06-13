@@ -304,7 +304,7 @@ echo -e "║${kuning} NS DOMAIN     \e[0m★ \033[1;33m $(cat /root/nsdomain) ${
 echo -e "║${kuning} RAM           \e[0m★ \033[1;33m $tram MB ${NC}"
 echo -e "║${kuning} CPU           \e[0m★ \033[1;36m $cpu_usage"
 echo -e "║${kuning} CPU CORES     \e[0m★ \033[1;36m $cores"
-echo -e "║${cyan}   WHATSAPP      \e[0m★ \033[1;36m 085955333616"
+echo -e "║${cyan} WHATSAPP      \e[0m★ \033[1;36m 085955333616"
 echo -e "║${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}" 
 echo -e "║${red_background}            ACCOUNT INFORMATION             ${NC}"
 echo -e "║${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
