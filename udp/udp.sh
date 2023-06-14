@@ -1,6 +1,6 @@
 #!/bin/bash
 #Script UdpCustom 2023
-#Script By Bringas family
+#Script By MARDHEX
 
 cd
 rm -rf /root/udp
