@@ -9,10 +9,7 @@ mkdir -p /root/udp
 echo ""
 sleep 4
 echo " install UDP-CUSTOM........" | lolcat
-sleep 5
-clear
-figlet "SUCCES"
-sleep 3
+sleep 4
 clear
 echo "BRINGAS MELUNCUR GAYS........" | lolcat
 clear
@@ -21,9 +18,8 @@ chmod +x /root/udp/udp-custom
 clear
 # install Config Default Udp
 echo ""
-sleep 2
 echo "Mempersiapkan progres udp......." | lolcat
-sleep 5
+sleep 4
 clear
 wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
 chmod 644 /root/udp/config.json
