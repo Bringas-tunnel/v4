@@ -78,7 +78,7 @@ GET / HTTP/1.1[crlf]Host: $domen
 [crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "BRINGAS-FAMILY" | lolcat
+echo -e "BRINGAS-FAMILY"
 else
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -98,9 +98,9 @@ echo -e "WS+SSL      : 443" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
 echo -e "SlowDNS     : 53,5300,443" 
 echo -e "UDPGW       : 7100-7200 = support vc-vcs" | tee -a /etc/log-create-user.log
-echo -e "==================================" | lolcat 
+echo -e "==================================" 
 echo -e "\e[1;36m    DETAIL ACCOUNT        \033[0m"
-echo -e "==================================" | lolcat
+echo -e "=================================="
 echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
@@ -110,8 +110,8 @@ echo -e "SETING-UDP  : $domen:1-65535@$Login:$Pass"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Payload Ws" | tee -a /etc/log-create-user.log
 echo -e "
-GET / HTTP/1.1[crlf]Host: $domen
-[crlf]Upgrade: ws[crlf][crlf]
+GET / HTTP/1.1[crlf]Host:
+$domen[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 fi
