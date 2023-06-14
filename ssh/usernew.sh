@@ -21,6 +21,7 @@ wsssl=`cat /root/log-install.txt | grep -w "SSH SSL Websocket" | cut -d: -f2 | a
 #     Create account 
         hijau="\e[1;32m"
         NC="\033m"
+clear
 echo -e "\e[1;37mCreate Account\033[0m"
 echo -e "${hijau}"
 read -p "        Username : " Login
