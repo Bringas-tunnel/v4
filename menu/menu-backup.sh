@@ -13,12 +13,12 @@ Green_background="\033[42;37m"
 Red_background="\033[41;37m"
 cyan="\e[1;36m"
 Suffix="\033[0m"
+green_background="\033[42;37m"
+red_background="\033[41;37m"
 
-
-echo -e "${BlueCyan}              Menu Backup                   "
+echo -e "${red_background}Menu Backup${NC}"
 echo
 echo
-echo -e "${BlueCyan}pilih Nomor :"
 echo
 echo "1).Backup"
 echo "2).Restore"
@@ -33,7 +33,7 @@ read -p    "└╼>>>  " bro
 
 if [ $bro = 1 ] || [ $bro = 1 ]
 then
-figlet "backup" | lolcat
+figlet "backup"
 backup
 echo "--------------------------------------------------------"
 echo
