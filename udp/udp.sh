@@ -1,6 +1,6 @@
 #!/bin/bash
 #Script UdpCustom 2023
-#Script By MARDHEX
+#Script By Bringas family
 
 cd
 rm -rf /root/udp
@@ -8,35 +8,22 @@ mkdir -p /root/udp
 # install udp-custom
 echo ""
 sleep 4
-echo " Download UDP - custom........" | lolcat
-sleep 4
+echo " install UDP-CUSTOM........" | lolcat
+sleep 5
 clear
-echo " Cecking Tool UDP - custom By : Bringas-family......." | lolcat
-sleep 4
+figlet "SUCCES"
+sleep 3
 clear
-echo " Succes Cecking Tool..........." | lolcat
-sleep 4
-clear
-echo " Please Downloading Toll UdpCustom........" | lolcat
-sleep 4
+echo "BRINGAS MELUNCUR GAYS........" | lolcat
 clear
 wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/udp-custom-linux-amd64" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
 chmod +x /root/udp/udp-custom
 clear
 # install Config Default Udp
 echo ""
-sleep 4
-echo "Download Script UDP - custom........" | lolcat
-sleep 4
-clear
-echo "Cecking UDP - custom By : Bringas-family......." | lolcat
-sleep 4
-clear
-echo "Succes Cecking UDP - custom..........." | lolcat
-sleep 4
-clear
-echo "PROCCESIING UDP - custom........" | lolcat
-sleep 4
+sleep 2
+echo "Mempersiapkan progres udp......." | lolcat
+sleep 5
 clear
 wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
 chmod 644 /root/udp/config.json
