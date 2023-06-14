@@ -92,7 +92,21 @@ red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 export LANG='en_US.UTF-8'
 export LANGUAGE='en_US.UTF-8'
 
+        # background validation
 
+        green_background="\033[42;37m"
+
+        red_background="\033[41;37m"
+
+        # color text 
+
+        yelow="\e[1;33m"
+
+        NC="\033[0m"
+
+        cyan="\e[1;36m"
+
+        white="\e[1;37m"
 # // Export Color & Information
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -106,16 +120,15 @@ export NC='\033[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 
 clear
-echo -e "\e[1;37mVLESS MENU\033[0m"
+echo -e "   ${red_background}VLESS MENU${NC}"
 echo -e ""
-echo -e "      ${BICyan}[${BIWhite}•1${BICyan}] Create Vless"
-echo -e "      ${BICyan}[${BIWhite}•2${BICyan}] Create Vless"
-echo -e "      ${BICyan}[${BIWhite}•3${BICyan}] Xtends vless"
-echo -e "      ${BICyan}[${BIWhite}•4${BICyan}] Delete Vless"
-echo -e "      ${BICyan}[${BIWhite}•5${BICyan}] Check Login Vless"
-echo -e "      ${BICyan}[${BIYellow}•0${BICyan}] Back To Menu"
-echo -e "      ─────────────────────────────────────────" | lolcat
-echo ""
+echo -e "       ${BICyan}[${BIWhite}•1${BICyan}] Create Vless"
+echo -e "       ${BICyan}[${BIWhite}•2${BICyan}] Create Vless"
+echo -e "       ${BICyan}[${BIWhite}•3${BICyan}] Xtends vless"
+echo -e "       ${BICyan}[${BIWhite}•4${BICyan}] Delete Vless"
+echo -e "       ${BICyan}[${BIWhite}•5${BICyan}] Check Login Vless"
+echo -e "       ${BICyan}[${BIYellow}•0${BIYellow}] Back To Menu"
+echo "${yelow}"
 read -p " >>>  "  opt
 echo -e ""
 case $opt in
