@@ -52,6 +52,12 @@ PERMISSION () {
 red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
+yelow="\e[1;33m"
+white="\e[1;37m"
+cyann="\e[1;37m"
+
+green_background="\033[42;37m"
+red_background="\033[41;37m"
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 PERMISSION
@@ -66,18 +72,18 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "  \e[1;37mSSH MENU\033[0m"
+echo -e "  ${red_background}SSH MENU${NC}"
 echo -e ""
-echo -e "        [\e[1;37m•1\e[0m] \e[1;36mCreate ssh\033[0m"
-echo -e "        [\e[1;37m•2\e[0m] \e[1;36mCreate trial\033[0m"
-echo -e "        [\e[1;37m•3\e[0m] \e[1;36mRenew ssh\033[0m"
-echo -e "        [\e[1;37m•4\e[0m] \e[1;36mDelet ssh\033[0m"
-echo -e "        [\e[1;37m•5\e[0m] \e[1;36mCek user login\033[0m"
-echo -e "        [\e[1;37m•6\e[0m] \e[1;36mList user\033[0m"
-echo -e "        [\e[1;37m•7\e[0m] \e[1;36mDelet ssh expired\033[0m"
-echo -e "        [\e[1;37m•8\e[0m] \e[1;36mAuto Kill ssh\033[0m"
-echo -e "        [\e[1;37m•9\e[0m] \e[1;36mCek multilogin ssh\033[0m"
-echo -e "        [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
+echo -e "        ${white}[•1]${NC} ${cyann}Create ssh${NC}"
+echo -e "        ${white}[•2]${NC} ${cyann}Create trial${NC}"
+echo -e "        ${white}[•3]${NC} ${cyann}Renew ssh${NC}"
+echo -e "        ${white}[•4]${NC} ${cyann}Delet ssh\033[0m"
+echo -e "        ${white}[•5]${NC} ${cyann}Cek user login\033[0m"
+echo -e "        ${white}[•6]${NC} ${cyann}List user\033[0m"
+echo -e "        ${white}[•7]${NC} ${cyann}Delet ssh expired\033[0m"
+echo -e "        ${white}[•8]${NC} ${cyann}Auto Kill ssh\033[0m"
+echo -e "        ${white}[•9]${NC} ${cyann}Cek multilogin ssh\033[0m"
+echo -e "        ${yelow}[•0]${NC} ${yelow}Back To Menu\033[0m"
 echo -e "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e ""
 read -p " >>>  "  opt
