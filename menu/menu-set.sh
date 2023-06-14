@@ -1,20 +1,29 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear 
-echo -e "\e[1;37mSYSTEM MENU\033[0m"
+        # background validation
+        green_background="\033[42;37m"
+        red_background="\033[41;37m"
+        # color text 
+        yelow="\e[1;33m"
+        NC="\033[0m"
+        cyan="\e[1;36m"
+        white="\e[1;37m"
+clear        
+echo -e "  ${red_background}SYSTEM MENU${NC}"
 echo -e " "
-echo -e "         [\e[1;37m•1\e[0m] \e[1;36mUbah Domain vps\033[0m"
-echo -e "         [\e[1;37m•2\e[0m] \e[1;36mUbah Port\033[0m"
-echo -e "         [\e[1;37m•3\e[0m] \e[1;36mUbah banner\033[0m"
-echo -e "         [\e[1;37m•4\e[0m] \e[1;36mRestart service\033[0m"
-echo -e "         [\e[1;37m•5\e[0m] \e[1;36mCek bandwith\033[0m"
-echo -e "         [\e[1;37m•6\e[0m] \e[1;36mAtur waktu riset\033[0m"
-echo -e "         [\e[1;37m•7\e[0m] \e[1;36mSpeedtest vps\033[0m"
-echo -e "         [\e[1;37m•8\e[0m] \e[1;36mWebmin menu\033[0m"
-echo -e "         [\e[1;37m•9\e[0m] \e[1;36mTentang Script\033[0m"
-echo -e "         [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
-echo -e "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
-echo -e ""
+echo -e "         ${white}[•1]${NC} ${cyan}ganti Domain vps\033[0m"
+echo -e "         ${white}[•2]${NC} ${cyan}ganti Port\033[0m"
+echo -e "         ${white}[•3]${NC} ${cyan}ganti banner\033[0m"
+echo -e "         ${white}[•4]${NC} ${cyan}Restart service\033[0m"
+echo -e "         ${white}[•5]${NC} ${cyan}Cek bandwith\033[0m"
+echo -e "         ${white}[•6]${NC} ${cyan}Atur waktu riset\033[0m"
+echo -e "         ${white}[•7]${NC} ${cyan}Speedtest vps\033[0m"
+echo -e "         ${white}[•8]${NC} ${cyan}Webmin menu\033[0m"
+echo -e "         ${white}[•9]${NC} ${cyan}Tentang Script\033[0m"
+echo -e "         ${yelow}[•0]${NC} ${yelow}Back To Menu\033[0m"
+echo -e "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "${yellow}"
 read -p " >>>   " opt
 echo -e ""
 case $opt in
