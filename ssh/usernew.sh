@@ -81,8 +81,8 @@ echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "\e[1;32m___________________________________\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Payload ws ssl port 443" | tee -a /etc/log-create-user.log
 echo -e "
- GET-CFRAY wss://[host] [protocol][crlf]Host: ${domen}
- [crlf]Upgrade: ws[crlf][crlf]
+GET-CFRAY wss://[host] [protocol][crlf]Host: ${domen}
+[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "___________________________________"
 echo -e "Payload Websocket port 80" | tee -a /etc/log-create-user.log
@@ -148,7 +148,7 @@ echo -e "
 GET http://tsel.me/worryfree/ HTTP/1.1[crlf]Host: 
 $domen[crlf][crlf]
 " | tee -a /etc/log-create-user.log
-echo -e"____________________________________________${NC}
+echo -e"____________________________________________${NC}"
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Bringas-family"
