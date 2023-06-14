@@ -52,6 +52,21 @@ PERMISSION () {
 red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
+        # background validation
+
+        green_background="\033[42;37m"
+
+        red_background="\033[41;37m"
+
+        # color text 
+
+        yelow="\e[1;33m"
+
+        NC="\033[0m"
+
+        cyan="\e[1;36m"
+
+        white="\e[1;37m"
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 PERMISSION
@@ -66,16 +81,15 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear 
-echo -e "\e[1;37mTROJAN-GO MENU\033[0m"
+echo -e   "${red_background}TROJAN-GO MENU${NC}"
 echo -e " "
-echo -e "         [\e[1;37m•1\e[0m] \e[1;36mCreate TrojanGo\033[0m"
-echo -e "         [\e[1;37m•2\e[0m] \e[1;36mCreate Trial\033[0m"
-echo -e "         [\e[1;37m•3\e[0m] \e[1;36mXtend TrojanGo\033[0m"
-echo -e "         [\e[1;37m•4\e[0m] \e[1;36mDelete Akun Trojan-Go\033[0m"
-echo -e "         [\e[1;37m•5\e[0m] \e[1;36mCek Login Trojan-Go\033[0m"
-echo -e "         [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
-echo -e "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
-echo -e ""
+echo -e "         ${white}[•1]${NC} ${cyan}Create TrojanGo${NC}"
+echo -e "         ${white}[•2]${NC} ${cyan}Create Triall${NC}"
+echo -e "         ${white}[•3]${NC} ${cyan}Xtend account${NC}"
+echo -e "         ${white}[•4]${NC} ${cyan}Delet account${NC}"
+echo -e "         ${white}[•5]${NC} ${cyan}Cek login user${Nc}"
+echo -e "         ${white}[•0]${NC} ${yelow}Back To Menu${NC}"
+echo -e "${yelow}"
 read -p " >>>   " opt
 echo -e ""
 case $opt in
