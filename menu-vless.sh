@@ -128,7 +128,7 @@ echo -e "       ${BICyan}[${BIWhite}•3${BICyan}] Xtends vless"
 echo -e "       ${BICyan}[${BIWhite}•4${BICyan}] Delete Vless"
 echo -e "       ${BICyan}[${BIWhite}•5${BICyan}] Check Login Vless"
 echo -e "       ${BICyan}[${BIYellow}•0${BIYellow}] Back To Menu"
-echo "${yelow}"
+echo " "
 read -p " >>>  "  opt
 echo -e ""
 case $opt in
