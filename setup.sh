@@ -5,7 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 
 clear
 red='\e[1;31m'
-green='\e[0;32m'
+green='\e[1;32m'
 yell='\e[1;33m'
 tyblue='\e[1;36m'
 NC='\e[0m'
@@ -62,15 +62,14 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 1. apt update -y"  
-  echo -e "[ ${tyblue}NOTES${NC} ] 2. apt upgrade -y"
-  echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
-  echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
-  echo "kata bringas tunggu............."
+  echo -e "[ ${green}NOTES${NC} ] 1. apt update -y"  
+  echo -e "[ ${green}NOTES${NC} ] 2. apt upgrade -y"
+  echo -e "[ ${green}NOTES${NC} ] 3. apt dist-upgrade -y"
+  echo -e "[ ${green}NOTES${NC} ] 4. reboot"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
-  echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
+  echo -e "[ ${green}NOTES${NC} ] After rebooting"
+  echo -e "[ ${green}NOTES${NC} ] Then run this script again"
+  echo -e "[ ${green}NOTES${NC} ] if you understand then tap enter now"
   read
 else
   echo -e "[ ${green}INFO${NC} ] Oke installed"
