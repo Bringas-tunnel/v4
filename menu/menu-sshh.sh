@@ -72,20 +72,19 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "  ${red_background}SSH MENU${NC}"
+echo -e "   ${red_background}SSH MENU${NC}"
 echo -e ""
 echo -e "        ${white}[•1]${NC} ${cyann}Create ssh${NC}"
 echo -e "        ${white}[•2]${NC} ${cyann}Create trial${NC}"
 echo -e "        ${white}[•3]${NC} ${cyann}Renew ssh${NC}"
-echo -e "        ${white}[•4]${NC} ${cyann}Delet ssh\033[0m"
-echo -e "        ${white}[•5]${NC} ${cyann}Cek user login\033[0m"
-echo -e "        ${white}[•6]${NC} ${cyann}List user\033[0m"
-echo -e "        ${white}[•7]${NC} ${cyann}Delet ssh expired\033[0m"
-echo -e "        ${white}[•8]${NC} ${cyann}Auto Kill ssh\033[0m"
-echo -e "        ${white}[•9]${NC} ${cyann}Cek multilogin ssh\033[0m"
-echo -e "        ${yelow}[•0]${NC} ${yelow}Back To Menu\033[0m"
-echo -e "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e ""
+echo -e "        ${white}[•4]${NC} ${cyann}Delet ssh${NC}"
+echo -e "        ${white}[•5]${NC} ${cyann}Cek user login${NC}"
+echo -e "        ${white}[•6]${NC} ${cyann}List user${NC}"
+echo -e "        ${white}[•7]${NC} ${cyann}Delet ssh expired${NC}"
+echo -e "        ${white}[•8]${NC} ${cyann}Auto Kill ssh${NC}"
+echo -e "        ${white}[•9]${NC} ${cyann}Cek multilogin ssh${NC}"
+echo -e "        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}"
+echo -e "${yelow}"
 read -p " >>>  "  opt
 echo -e ""
 case $opt in
