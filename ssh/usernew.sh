@@ -79,41 +79,64 @@ GET / HTTP/1.1[crlf]Host: $domen
 " | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "BRINGAS-FAMILY"
-else
-
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m        𝗔𝗖𝗖𝗢𝗨𝗡𝗧        \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
-echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
-echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m         𝗦𝗘𝗥𝗩𝗘𝗥       \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
-echo -e "Ns          : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
-echo -e "WS          : 80" | tee -a /etc/log-create-user.log
-echo -e "WS+SSL      : 443" | tee -a /etc/log-create-user.log
-echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
-echo -e "SlowDNS     : 53,5300,443" 
-echo -e "UDPGW       : 7100-7200 = support vc-vcs" | tee -a /etc/log-create-user.log
-echo -e "==================================" 
-echo -e "\e[1;36m    DETAIL ACCOUNT        \033[0m"
-echo -e "=================================="
-echo -e "SSH-80      : $domen:80@$Login:$Pass"
-echo -e "SSH-443     : $domen:443@$Login:$Pass"
-echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
+else 
+          #Color validation 
+          hijau="\e[1;32m"
+          cyan="\e[1;36m"
+          kuning="\e[1;33m"
+          ungu="\e[1;35m"
+          putih="\e[1;37m"
+          white="\e[1;37m"
+          NC="\033[0m"
+          # CREATE S S H 
+green_background="\033[42;37m"
+red_background="\033[41;37m"
+echo -e "${cyan}___________________________________${NC}"
+echo -e " ${red_background}𝗔𝗖𝗢𝗨𝗡𝗧${NC}" | tee -a /etc/log-create-user.log
+echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
+echo -e "Username   : $Login" | tee -a /etc/log-create-user.log
+echo -e "Password   : $Pass" | tee -a /etc/log-create-user.log
+echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
+echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
+echo -e " ${red_background}DETAIL${NC}" | tee -a /etc/log-create-user.log
+echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
+echo -e "Host     : $domen" | tee -a /etc/log-create-user.log
+echo -e "NS       : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "PubKey   : $slkey" | tee -a /etc/log-create-user.log
+echo -e "Port ws  : 80" | tee -a /etc/log-create-user.log
+echo -e "ws ssl   : 443" | tee -a /etc/log-create-user.log
+echo -e "SSL only : 447 , 777" | tee -a /etc/log-create-user.log
+echo -e "SlowDNS  : 53,5300,443" 
+echo -e "UDPGW    : 7200 = suport vc" | tee -a /etc/log-create-user.log
+echo -e "________________________________________" 
+echo -e "${red_background}PENGUNAAN ACCOUNT$NC}"
+echo -e "________________________________________"
+echo -e "${hijau}contoh mode ws http custom${NC}"
+echo -e "${hijau}__________________________${NC}"
+echo -e "websocket   : masukan_bug:80@$Login:$Pass"
+echo -e "________________________________________"
+echo -e "${hijau}contoh mode ws ssl http custom${NC}"
+echo -e "${hijau}______________________________${NC}"
+echo -e "ws ssl      : $domen:443@$Login:$Pass"
+echo -e "SSL / SNI   : masukan Bug"
+echo -e "________________________________________"
+echo -e "${hijau}contoh mode udp${NC}" 
+echo -e "${hijau}_____________________________${NC}"
 echo -e "SETING-UDP  : $domen:1-65535@$Login:$Pass"
-#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Payload Ws" | tee -a /etc/log-create-user.log
+echo -e "UDP CUSTOM  : centang ✓"
+echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
+echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Payload Websocket ( port 80 )" | tee -a /etc/log-create-user.log
 echo -e "
 GET / HTTP/1.1[crlf]Host:
 $domen[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "payload ws ssl ( port 443 )"
+echo -e "
+GET-CFRAY wss://[host] HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: ws[crlf][crlf]
+" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Bringas-family"
