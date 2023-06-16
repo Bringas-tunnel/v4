@@ -1,7 +1,11 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
+#
+green_background="\033[42;37m"
+NC="\033{L[0m" # PENUTUP WARNA
+red_background="\033[41;37m"
 clear 
-echo -e "\e[1;37mRESTART MENU\033[0m"
+echo -e "  ${red_background}RESTART MENU${NC}"
 echo -e ""
 echo -e "    [\e[1;37m•1\e[0m] \e[1;36mRestart All Services\033[0m"
 echo -e "    [\e[1;37m•2\e[0m] \e[1;36mRestart OpenSSH\033[0m"
