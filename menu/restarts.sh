@@ -4,23 +4,26 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 green_background="\033[42;37m"
 NC="\033{L[0m" # PENUTUP WARNA
 red_background="\033[41;37m"
+# color validation 
+wh="\e[1;37m" # PUTIH
+ye="\e[1;33m" # KUNING
+cy="\e[1;36m" # CYAN/BIRU MUDA
 clear 
 echo -e "  ${red_background}RESTART MENU${NC}"
 echo -e ""
-echo -e "    [\e[1;37m•1\e[0m] \e[1;36mRestart All Services\033[0m"
-echo -e "    [\e[1;37m•2\e[0m] \e[1;36mRestart OpenSSH\033[0m"
-echo -e "    [\e[1;37m•3\e[0m] \e[1;36mRestart Dropbear\033[0m"
-echo -e "    [\e[1;37m•4\e[0m] \e[1;36mRestart Stunnel4\033[0m"
-echo -e "    [\e[1;37m•5\e[0m] \e[1;36mRestart OpenVPN\033[0m"
-echo -e "    [\e[1;37m•6\e[0m] \e[1;36mRestart Squid\033[0m"
-echo -e "    [\e[1;37m•7\e[0m] \e[1;36mRestart Nginx\033[0m"
-echo -e "    [\e[1;37m•8\e[0m] \e[1;36mRestart Badvpn\033[0m"
-echo -e "    [\e[1;37m•9\e[0m] \e[1;36mRestart Xray\033[0m"
-echo -e "    [\e[1;37m10\e[0m] \e[1;36mRestart Websocket\033[0m"
-echo -e "    [\e[1;37m11\e[0m] \e[1;36mRestart Trojan Go\033[0m"
-echo -e "    [\e[1;33m•0\e[0m] \e[1;33mBack To Menu\033[0m"
-echo -e "    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
-echo -e ""
+echo -e "      ${wh}•1${NC} ${cy}Restart All Services${NC}"
+echo -e "      ${wh}•2${NC} ${cy}Restart OpenSSH${NC}"
+echo -e "      ${wh}•3${NC} ${cy}Restart Dropbear${NC}"
+echo -e "      ${wh}•4${NC} ${cy}Restart Stunnel4${NC}"
+echo -e "      ${wh}•5${NC} ${cy}Restart OpenVPN${NC}"
+echo -e "      ${wh}•6${NC} ${cy}Restart Squid${NC}"
+echo -e "      ${wh}•7${NC} ${cy}Restart Nginx${NC}"
+echo -e "      ${wh}•8${NC} ${cy}Restart Badvpn${NC}"
+echo -e "      ${wh}•9${NC} ${cy}Restart Xray${NC}"
+echo -e "      ${wh}10${NC} ${cy}Restart Websocket${NC}"
+echo -e "      ${wh}11${NC} ${cy}Restart Trojan Go${NC}"
+echo -e "      ${ye}•0${NC} ${ye}Back To Menu${NC}"
+echo -e "${ye}"
 read -p " >>>   " Restart
 echo -e ""
 clear
