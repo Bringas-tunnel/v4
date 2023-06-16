@@ -54,7 +54,7 @@ green='\e[1;32m'
 NC='\e[0m'
 yelow="\e[1;33m"
 white="\e[1;37m"
-cyann="\e[1;37m"
+cyann="\e[1;36m"
 
 green_background="\033[42;37m"
 red_background="\033[41;37m"
