@@ -19,7 +19,6 @@ red_background="\033[41;37m"
 echo -e "${red_background}Menu Backup${NC}"
 echo
 echo
-echo
 echo "1).Backup"
 echo "2).Restore"
 echo "3).strt"
