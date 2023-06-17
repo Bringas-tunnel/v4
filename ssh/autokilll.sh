@@ -14,17 +14,25 @@ sts="${Info}"
 else
 sts="${Error}"
 fi
+# color
+gr="\e[1;32m" # HIJAU
+cy="\e[1;36m" # CYAN
+wh="\e[1;37m" # PUTIH
+pr="\e[1;35m" # UNGU
+ye="\e[1;33m" # KUNING
+NC="\033[0m"  # PENUTUP
+
 clear
-echo -e "\e[1;37mAUTOKILL SSH\033[0m"
-echo -e " "
+echo -e "     ${wh}AUTOKILL SSH${NC}"
+echo -e "${cy}"
 echo -e "Status Autokill : $sts        "
 echo -e ""
-echo -e "    [\e[1;37m•1\033[0m]  \e[1;36mAutoKill dalam 5 Minutes\033[0m"
-echo -e "    [\e[1;37m•2\033[0m]  \e[1;36mAutoKill dalam 10 Minutes\033[0m"
-echo -e "    [\e[1;37m•3\033[0m]  \e[1;36mAutoKill dalam 15 Minutes\033[0m"
-echo -e "    [\e[1;37m•4\033[0m]  \e[1;36mTurn Off AutoKill/MultiLogin\033[0m"
-echo -e "    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
-echo -e ""
+echo -e "      ${wh}[•1]${NC}  ${cy}AutoKill dalam 5 Minutes${NC}"
+echo -e "      ${wh}[•2]${NC}  ${cy}AutoKill dalam 10 Minutes${NC}"
+echo -e "      ${wh}[•3]${NC}  ${cy}AutoKill dalam 15 Minutes${NC}"
+echo -e "      ${wh}[•4]${NC}  ${cy}Turn Off AutoKill/MultiLogin${NC}"
+echo -e "      ${ye}[•0]${NC}  ${ye}Back to Menu${NC}"
+echo -e "${gr}"
 read -p "Select [1-4 or x] :  " AutoKill
 if [ -z $AutoKill ]; then
 autokill-menu
@@ -40,12 +48,12 @@ case $AutoKill in
                 echo "# Autokill" >/etc/cron.d/tendang
                 echo "*/5 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 echo -e ""
-                echo -e "======================================" | lolcat
+                echo -e "======================================"
                 echo -e ""
                 echo -e "      Allowed MultiLogin : $max"
                 echo -e "      AutoKill Every     : 5 Minutes"      
                 echo -e ""
-                echo -e "======================================" | lolcat                                                                                                                                
+                echo -e "======================================"                                                                                                                               
                 service cron restart >/dev/null 2>&1
                 service cron reload >/dev/null 2>&1                                                                  
                 ;;
