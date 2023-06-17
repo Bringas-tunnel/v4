@@ -5,6 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 echo -e " [INFO] Downloading Update File"
 # hapus data
 rm -rf set-br
+rm -rf menu-bckp
 rm -rf menu-backup
 rm -rf backup
 rm -rf restore
