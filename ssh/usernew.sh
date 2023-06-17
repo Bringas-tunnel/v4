@@ -33,7 +33,7 @@ wsssl=`cat /root/log-install.txt | grep -w "SSH SSL Websocket" | cut -d: -f2 | a
 green_background="\033[42;37m"
 red_background="\033[41;37m"
 clear
-echo -e  "\e[1;37mCreate Account\033[0m"
+echo -e "     ${red_background}Create Account${NC}"
 echo -e "${hijau}"
 read -p "        Username : " Login
 read -p "        Password : " Pass
@@ -51,7 +51,6 @@ OhpSSH=`cat /root/log-install.txt | grep -w "OHP SSH" | cut -d: -f2 | awk '{prin
 OhpDB=`cat /root/log-install.txt | grep -w "OHP DBear" | cut -d: -f2 | awk '{print $1}'`
 OhpOVPN=`cat /root/log-install.txt | grep -w "OHP OpenVPN" | cut -d: -f2 | awk '{print $1}'`
 
-sleep 0,5
 clear
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
 exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
@@ -90,20 +89,20 @@ echo -e "_________________________________________________"
 echo -e "$domen:443@Login:$Pass"
 echo -e "PAYLOAD   : pake payload ws & ssl"
 echo -e "SNI / SSL : Masukan_bug
-echo -e_________________________________________________"
+echo -e___________________________________________________"
 echo -e "Payload ws ssl port 443" | tee -a /etc/log-create-user.log
 echo -e "
 GET-CFRAY wss://[host] [protocol][crlf]Host: ${domen}
 [crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
-echo -e "_________________________________________________"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "Payload Websocket port 80" | tee -a /etc/log-create-user.log
 echo -e "
 GET / HTTP/1.1[crlf]Host: 
 $domen[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
-echo -e "_________________________________________________" | tee -a /etc/log-create-user.log
-echo -e "${cyan}BRINGAS-FAMILY${NC}"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+echo -e "                  ${cyan}BRINGAS-FAMILY${NC}"
 echo -e "enter back to menu  "
 else 
 
@@ -144,7 +143,7 @@ echo -e "SETING-UDP  : $domen:1-65535@$Login:$Pass"
 echo -e "UDP CUSTOM  : centang ✓"
 echo -e "${ungu}__________________________________________${Nc}" | tee -a /etc/log-create-user.log
 #echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
-echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
+echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
 echo -e "Payload Websocket ( port 80 )" | tee -a /etc/log-create-user.log
 echo -e "
 GET / HTTP/1.1[crlf]Host:
@@ -155,13 +154,13 @@ echo -e "payload ws ssl ( port 443 )"
 echo -e "
 GET-CFRAY wss://[host] HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
-echo -e "${kuning}__________________________________________________${NC}" | tee -a /etc/log-create-user.log
+echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
 echo -e "payload opok Telkomsel"
 echo -e "
 GET http://tsel.me/worryfree/ HTTP/1.1[crlf]Host: 
 $domen[crlf][crlf]
 " | tee -a /etc/log-create-user.log
-echo -e "${kuning}___________________________________________________${NC}" | tee -a /etc/log-create-user.log
+echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Bringas-family"
