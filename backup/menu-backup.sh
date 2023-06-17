@@ -1,10 +1,10 @@
 clear
 red='\033[0;31m'
-green='\033[0;32m'
+green='\033[1;32m'
 yellow='\033[0;33m'
 plain='\033[0m'
 blue='\033[0;34m'
-ungu='\033[0;35m'
+ungu='\033[1;35m'
 Green="\033[32m"
 Red="\033[31m"
 WhiteB="\e[5;37m"
@@ -18,7 +18,7 @@ echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo -e
 echo -e "${BlueCyan}              Menu Backup                   "
 echo -e
-echo -e "            t.me/AndyYuda"
+echo -e "             Bringas-family"
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo
@@ -32,8 +32,8 @@ echo "5).autobackup"
 echo
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
-echo -e "${BlueCyan}"
-read -p    "Pilih Nomor └╼>>>" bro
+echo -e "${green}"
+read -p    "Pilih Nomor └╼>>> " bro
 
 if [ $bro = 1 ] || [ $bro = 1 ]
 then
@@ -41,7 +41,7 @@ figlet "backup" | lolcat
 backup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script bringas"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -52,7 +52,7 @@ figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script Bringas"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -62,7 +62,7 @@ figlet "strt"
 strt
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script Bringas"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -71,7 +71,7 @@ then
 limitspeed
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script Bringas"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -81,7 +81,7 @@ then
 autobackup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script Bringas"
 echo
 echo "--------------------------------------------------------"
 fi
