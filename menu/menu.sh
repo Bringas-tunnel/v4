@@ -270,6 +270,7 @@ Bhitam="\033[4;30m"
 kuning="\e[1;33m"
 hijau="\e[1;32m"
 cyan="\e[1;36m"
+cyann="\e[1;36m"
 pu="\e[1;35m" # ungu
 RB="\033[41;37m" #background merah
 #Status running 
@@ -305,10 +306,10 @@ echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}" 
 echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
-echo -e "SSH : $ssh1 | VMES : $vma | VLES : $vla | TROJAN : $tra]"
+echo -e "${cyann} SSH : $ssh1 | VMES : $vma | VLES : $vla | TROJAN : $tra]"
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
-echo -e "              │Client : ${NC}\033[1;33m$Name${NC}"
-echo -e "              │Xpired : ${NC}\033[1;33m$Exp${NC}"
+echo -e "${white}              │Client : ${NC}\033[1;33m$Name${NC}"
+echo -e "${white}              │Xpired : ${NC}\033[1;33m$Exp${NC}"
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
 echo -e "╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕"
 echo -e "|${pu} [•1]${NC}🟡 ${white} SSH${NC}          ""${pu}[•6]${NC}🟡 ${white} CHECK RUNNING${NC}"
