@@ -294,8 +294,8 @@ if [[ $nginx == "running" ]]; then
     status_nginx="${GREEN}ON${NC}"
 else
     status_nginx="${red}OFF${NC}"
-fi
-# menu
+fi 
+
 clear
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kcyan}| ${red_background}             𝗕𝗿𝗶𝗻𝗴𝗮𝘀 𝗧𝘂𝗻𝗻𝗲𝗹𝗶𝗻𝗴           ${NC} ${Kcyan}|"
