@@ -1,4 +1,4 @@
-#!/bin/bash 
+ #!/bin/bash 
  # ========================================= 
  vlx=$(grep -c -E "^#& " "/etc/xray/config.json") 
  let vla=$vlx/2
