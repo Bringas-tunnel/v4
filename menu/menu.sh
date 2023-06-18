@@ -242,8 +242,8 @@ green_background="\033[42;37m"
 red_background="\033[41;37m"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
-cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
-cpu_usage+=" %"
+cpu_usage2="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
+cpu_usage3="%"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
@@ -297,7 +297,7 @@ else
 fi
 clear
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
-echo -e "${Kcyan}| ${red_background}             𝗕𝗿𝗶𝗻𝗴𝗮𝘀 𝗧𝘂𝗻𝗻𝗲𝗹𝗶𝗻𝗴           ${NC} ${Kcyan}|"
+echo -e "${Kcyan}| ${red_background}             𝗕𝗿𝗶𝗻𝗴𝗮𝘀 𝗧𝘂𝗻𝗻𝗲𝗹𝗶𝗻𝗴           ${NC} ${Kcyan}|${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e "${Kcyan}|${NC} ${white} IP VPS ${NC}: $IPVPS"
