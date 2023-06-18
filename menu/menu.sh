@@ -306,7 +306,7 @@ echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}" 
 echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
-echo -e "|${cyann} SSH : $ssh1 | VMES : $vma | VLES : $vla | TROJAN : $tra |"
+echo -e "${cyann} SSH : $ssh1 | VMES : $vma | VLES : $vla | TROJAN : $tra "
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
 echo -e "${white}               Client : ${NC}\033[1;33m$Name${NC}"
 echo -e "${white}               Xpired : ${NC}\033[1;33m$Exp${NC}"
