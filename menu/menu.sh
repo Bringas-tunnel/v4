@@ -271,7 +271,8 @@ kuning="\e[1;33m"
 hijau="\e[1;32m"
 cyan="\e[1;36m"
 cyann="\e[1;36m"
-pu="\e[1;35m" # ungu
+pu="\e[5;35m" # ungu kedip
+MK="\e[5;31m" # merah kedip
 Kcyan="\e[5;36m"
 RB="\033[41;37m" #background merah
 #Status running 
@@ -296,7 +297,7 @@ else
     fi
 clear
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
-echo -e "${Kcyan}| ${red_background}             𝗕𝗿𝗶𝗻𝗴𝗮𝘀 𝗧𝘂𝗻𝗻𝗲𝗹𝗶𝗻𝗴            ${NC}"
+echo -e "${Kcyan}| ${red_background}             𝗕𝗿𝗶𝗻𝗴𝗮𝘀 𝗧𝘂𝗻𝗻𝗲𝗹𝗶𝗻𝗴            ${NC} |"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e "${Kcyan}|${NC} ${white} IP VPS ${NC}: $IPVPS         "
@@ -309,19 +310,19 @@ echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_ngi
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kbiru} SSH : $ssh1 | VMES : $vma | VLES : $vla | TROJAN : $tra "
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
-echo -e "${Kcyan}|${NC}${white}              Client : ${NC}\033[1;33m$Name${NC}"
-echo -e "${Kcyan}|${NC}${white}              Xpired : ${NC}\033[1;33m$Exp${NC}"
+echo -e "${Kcyan}|${NC}${white}              Client : ${NC}${MK}$Name${NC}"
+echo -e "${Kcyan}|${NC}${white}              Xpired : ${NC}${MK}$Exp${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────"
-echo -e "${Kcyan}|${NC}${pu} [•1]${NC}🟡 ${white} SSH${NC}          ""${pu}[•6]${NC}🟡 ${white} CHECK RUNNING${NC}"
-echo -e "${Kcyan}|${NC}${pu} [•2]${NC}🟡 ${white} VMESS${NC}        ""${pu}[•7]${NC}🟡 ${white} RESTR SERVICE${NC}"  
-echo -e "${Kcyan}|${NC}${pu} [•3]${NC}🟡 ${white} VLESS${NC}        ""${pu}[•8]${NC}🟡 ${white} BACKUP MENU${NC}"
-echo -e "${Kcyan}|${NC}${pu} [•4]${NC}🟡 ${white} TROJAN-GO${NC}    ""${pu}[•9]${NC}🟡 ${white} SET PASW VPS${NC}"
-echo -e "${Kcyan}|${NC}${pu} [•5]${NC}🟡 ${white} TROJAN-WS${NC}    ""${pu}[10]${NC}🟡 ${white} REBOOT SETTINGS${NC}"
+echo -e "${Kcyan}|${NC}${pu} [•1]${NC}📨 ${white} SSH${NC}          ""${pu}[•6]${NC}📨 ${white} CHECK RUNNING${NC}"
+echo -e "${Kcyan}|${NC}${pu} [•2]${NC}📨 ${white} VMESS${NC}        ""${pu}[•7]${NC}📨 ${white} RESTR SERVICE${NC}"  
+echo -e "${Kcyan}|${NC}${pu} [•3]${NC}📨 ${white} VLESS${NC}        ""${pu}[•8]${NC}📨 ${white} BACKUP MENU${NC}"
+echo -e "${Kcyan}|${NC}${pu} [•4]${NC}📨 ${white} TROJAN-GO${NC}    ""${pu}[•9]${NC}📨 ${white} SET PASW VPS${NC}"
+echo -e "${Kcyan}|${NC}${pu} [•5]${NC}📨 ${white} TROJAN-WS${NC}    ""${pu}[10]${NC}📨 ${white} REBOOT SETTINGS${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────"    
 echo -e "                    ${green}   11 ${NC}          "
 echo -e "                   ${red_background}EXTRA MENU${NC}"
-echo -e "              ━━━━━━━━━━━━━━━━━━━━━━" | lolcat
+echo -e "              ${Kcyan}──────────────────${NC}"
 echo -e   "${kuning}"
 read -p " >>>>  "  opt
 echo -e   ""
