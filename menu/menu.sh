@@ -271,6 +271,7 @@ kuning="\e[1;33m"
 hijau="\e[1;32m"
 cyan="\e[1;36m"
 pu="\e[1;35m" # ungu
+RB="\033[41;37m" #background merah
 #Status running 
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
@@ -293,20 +294,21 @@ else
     fi
 clear
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
-echo -e "|${red_background}           ★ 𝐁𝐑𝐈𝐍𝐆𝐀𝐒 𝐓𝐔𝐍𝐍𝐄𝐋 ★             ${NC}|"
+echo -e "|${red_background}           ★ 𝐁𝐑𝐈𝐍𝐆𝐀𝐒 𝐓𝐔𝐍𝐍𝐄𝐋 ★              ${NC}|"
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
-echo -e "${white} IP VPS ${NC}: $IPVPS         "
-echo -e "${white} ISP    ${NC}: $ISP           " 
-echo -e "${white} CPU    ${NC}: $cpu_usage     " 
-echo -e "${white} RAM    ${NC}: $tram Mb       "
+echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}" 
+echo -e "|${white} IP VPS ${NC}: $IPVPS         "
+echo -e "|${white} ISP    ${NC}: $ISP           " 
+echo -e "|${white} CPU    ${NC}: $cpu_usage     " 
+echo -e "|${white} RAM    ${NC}: $tram Mb       "
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}" 
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}" 
 echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
-echo -e " [ SSH : $ssh1 ][ VMES : $vma ][ VLES : $vla ][ TROJ : $tra ]"
+echo -e "[SSH : $ssh1][VMES : $vma][VLES : $vla][TROJ : $tra]"
 echo -e "${white}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}"
-echo -e "${Bbiru}          │Client : ${NC}\033[1;33m$Name${NC}"
-echo -e "${Bbiru}          │Xpired : ${NC}\033[1;33m$Exp${NC}"
+echo -e "${RB}           │Client : ${NC}\033[1;33m$Name${NC}"
+echo -e "${RB}           │Xpired : ${NC}\033[1;33m$Exp${NC}"
 echo -e "${white}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}"
 echo -e "╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕"
 echo -e "|${pu} [•1]${NC}🟡 ${white}SSH${NC}          ""║${pu}[•6]${NC}🟡 ${white}CHECK RUNNING${NC}"
@@ -315,9 +317,9 @@ echo -e "|${pu} [•3]${NC}🟡 ${white}VLESS${NC}        ""║${pu}[•8]${NC}�
 echo -e "|${pu} [•4]${NC}🟡 ${white}TROJAN-GO${NC}    ""║${pu}[•9]${NC}🟡 ${white}SET PASW VPS${NC}"
 echo -e "|${pu} [•5]${NC}🟡 ${white}TROJAN-WS${NC}    ""║${pu}[10]${NC}🟡 ${white}REBOOT SETTINGS${NC}"
 echo -e "╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛"    
-echo -e "                   ${green}   11 ${NC}          "
-echo -e "                  ${red_background}EXTRA MENU${NC}"
-echo -e "                     🔸━━━━━━━━━━━━━━━━━━━━━━━🔸" | lolcat
+echo -e "                    ${green}   11 ${NC}          "
+echo -e "                   ${red_background}EXTRA MENU${NC}"
+echo -e "                ━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e   "${kuning}"
 read -p " >>>>  "  opt
 echo -e   ""
