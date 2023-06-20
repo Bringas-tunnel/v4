@@ -243,7 +243,7 @@ red_background="\033[41;37m"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage2="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
-cpu_usage3=" %"
+cpu_usage=" %"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
@@ -302,7 +302,7 @@ echo -e "${Kcyan}| ${red_background}             𝗕𝗿𝗶𝗻𝗴𝗮𝘀 �
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e "${Kcyan}|${NC} ${white} IP VPS ${NC}: $IPVPS"
-echo -e "${Kcyan}|${NC} ${white} CPU    ${NC}: $cpu_usage3"  
+echo -e "${Kcyan}|${NC} ${white} CPU    ${NC}: $cpu_usage"  
 echo -e "${Kcyan}|${NC} ${white} RAM    ${NC}: $tram Mb"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
