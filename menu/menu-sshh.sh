@@ -83,6 +83,8 @@ echo -e "        ${white}[•6]${NC} ${cyann}List user${NC}"
 echo -e "        ${white}[•7]${NC} ${cyann}Delet ssh expired${NC}"
 echo -e "        ${white}[•8]${NC} ${cyann}Auto Kill ssh${NC}"
 echo -e "        ${white}[•9]${NC} ${cyann}Cek multilogin ssh${NC}"
+echo -e "        ${white}[•10]${NC} ${cyann}user lock${NC}"
+echo -e "        ${white}[•11]${NC} ${cyann}user unlock${NC}"
 echo -e "        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}"
 echo -e "${yelow}"
 read -p " >>>  "  opt
@@ -97,6 +99,8 @@ case $opt in
 7) clear ; delete ; exit ;;
 8) clear ; autokill ; exit ;;
 9) clear ; ceklim ; exit ;;
+10) clear ; user-lock ; exit ;;
+11) clear ; user-unlock ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
