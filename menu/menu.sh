@@ -243,7 +243,7 @@ red_background="\033[41;37m"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage2="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
-cpu_usage3="%"
+cpu_usage3=" %"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
@@ -273,6 +273,7 @@ cyan="\e[1;36m"
 cyann="\e[1;36m"
 pu="\e[5;35m" # ungu kedip
 MK="\e[5;31m" # merah kedip
+whiteK="\e[5;37m"
 Kcyan="\e[5;36m"
 RB="\033[41;37m" #background merah
 #Status running 
@@ -301,17 +302,16 @@ echo -e "${Kcyan}| ${red_background}             𝗕𝗿𝗶𝗻𝗴𝗮𝘀 �
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e "${Kcyan}|${NC} ${white} IP VPS ${NC}: $IPVPS"
-echo -e "${Kcyan}|${NC} ${white} CITY   ${NC}: $CITY" 
-echo -e "${Kcyan}|${NC} ${white} DAY    ${NC}: $DAY" 
+echo -e "${Kcyan}|${NC} ${white} CPU    ${NC}: $cpu_usage3"  
 echo -e "${Kcyan}|${NC} ${white} RAM    ${NC}: $tram Mb"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
-echo -e "${pu} SSH : $ssh1 | VMES : $vma | VLES : $vla | TROJAN : $tra "
+echo -e "${MK} SSH : $ssh1 ▫️ VMES : $vma ▫️ VLES : $vla ▫️ TROJAN : $tra "
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
-echo -e "${Kcyan}|${NC}${white}              Client : ${NC}${MK}$Name${NC}"
-echo -e "${Kcyan}|${NC}${white}              Xpired : ${NC}${MK}$Exp${NC}"
+echo -e "${Kcyan}|${NC}${whiteK}              Client : ${NC}${MK}$Name${NC}"
+echo -e "${Kcyan}|${NC}${whiteK}              Xpired : ${NC}${MK}$Exp${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}"
 echo -e "${Kcyan}─────────────────────────────────────────────"
 echo -e "${Kcyan}|${NC}${Kbiru} [•1]${NC}📨 ${white} SSH${NC}          ""${Kbiru}[•6]${NC}📨 ${white} CHECK RUNNING${NC}"
