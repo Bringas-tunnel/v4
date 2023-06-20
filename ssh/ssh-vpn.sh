@@ -292,6 +292,8 @@ wget -O delete "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/del
 wget -O autokilll "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/autokilll.sh"
 wget -O ceklim "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/tendang.sh"
+wget -O user-lock "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/user-unlock.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/menu-set.sh"
@@ -305,6 +307,7 @@ wget -O about "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/about.s
 wget -O auto-reboot "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/auto-reboot.sh"
 wget -O restarts "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/restarts.sh"
 wget -O bw "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/menu/bw.sh"
+
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/port/port-ssl.sh"
@@ -331,6 +334,8 @@ chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
 chmod +x menu-trojan
+chmod +x user-lock
+chmod +x user-unlock
 
 chmod +x menu-sshh
 chmod +x usernew
