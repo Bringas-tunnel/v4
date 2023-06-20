@@ -276,6 +276,7 @@ MK="\e[5;31m" # merah kedip
 whiteK="\e[5;37m"
 Kcyan="\e[5;36m"
 RB="\033[41;37m" #background merah
+Ucyan="\033[4;36m"
 #Status running 
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
@@ -297,11 +298,11 @@ else
     status_nginx="${red}OFF${NC}"
 fi
 clear
-echo -e "                        ${red_background}𝗕𝗿𝗶𝗻𝗴𝗮𝘀 𝗧𝘂𝗻𝗻𝗲𝗹𝗶𝗻𝗴${NC}"
+echo -e "                  ${Ucyan}𝗕𝗿𝗶𝗻𝗴𝗮𝘀 𝗧𝘂𝗻𝗻𝗲𝗹𝗶𝗻𝗴${NC}"
 echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}" 
-echo -e "${Kcyan}|${NC} ${white} IP VPS ${NC}: $IPVPS"
-echo -e "${Kcyan}|${NC} ${white} CPU    ${NC}: $cpu_usage"  
-echo -e "${Kcyan}|${NC} ${white} RAM    ${NC}: $tram Mb"
+echo -e "${Kcyan}│${NC} ${white} IP VPS ${NC}: $IPVPS"
+echo -e "${Kcyan}│${NC} ${white} CPU    ${NC}: $cpu_usage"  
+echo -e "${Kcyan}│${NC} ${white} RAM    ${NC}: $tram Mb"
 echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}" 
 echo -e "${Kcyan}─────────────────────────────────────────────${NC}" 
 echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
