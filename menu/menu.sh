@@ -307,7 +307,7 @@ echo -e "${Kcyan}│${NC} ${white} VERSION ${NC}: Libev 0.2"
 echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"  
 echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
 echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
-echo -e "${Kcyan}│ ${MK}SSH : $ssh1 │ VMES : $vma │ VLES : $vla │ TROJAN : $tra"${Kcyan}│${NC}
+echo -e "${Kcyan}│${MK}SSH : $ssh1 │ VMES : $vma │ VLES : $vla │ TROJAN : $tra"${Kcyan}│${NC}
 echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
 echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
 echo -e "${Kcyan}│${NC}${whiteK}              Client : ${NC}${MK}$Name${NC}"
