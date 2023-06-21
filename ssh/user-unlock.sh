@@ -64,7 +64,7 @@ else
 red "Permission Denied!"
 exit 0
 fi
-echo -e "\e[32mloading...\e[0m"
+echo -e "\e[1;32mloading...\e[0m"
 clear
 echo " "
 echo " "
