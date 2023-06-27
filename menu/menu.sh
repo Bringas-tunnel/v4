@@ -262,7 +262,7 @@ Bhijau="\033[4;32m"
 Bmerah="\033[4;31m"
 Bkuning="\033[4;33m"
 Bputih="\033[4;37m"
-Kbiru="\033[5;34m" # kedip biru
+Kbiru="\033[1;36m" # kedip biru
 Bungu="\033[4;35m"
 Bcyan="\033[4;36m"
 Bhitam="\033[4;30m"
@@ -272,9 +272,9 @@ hijau="\e[1;32m"
 cyan="\e[1;36m"
 cyann="\e[1;36m"
 pu="\e[5;35m" # ungu kedip
-MK="\e[5;31m" # merah kedip
+MK="\e[1;36m" # merah kedip
 whiteK="\e[5;37m"
-Kcyan="\e[5;36m"
+Kcyan="\e[1;36m"
 RB="\033[41;37m" #background merah
 Ucyan="\033[4;36m"
 #Status running 
@@ -318,11 +318,9 @@ echo -e "${Kcyan}│${NC}${Kbiru} [•1]${NC}📨 ${white} SSH${NC}        " "${
 echo -e "${Kcyan}│${NC}${Kbiru} [•2]${NC}📨 ${white} VMESS${NC}      " "${Kbiru}[•7]${NC}📨 ${white} RESTR SERVICE${NC}"   "${Kcyan}│${NC}"  
 echo -e "${Kcyan}│${NC}${Kbiru} [•3]${NC}📨 ${white} VLESS${NC}      " "${Kbiru}[•8]${NC}📨 ${white} BACKUP MENU${NC}  "   "${Kcyan}│${NC}"
 echo -e "${Kcyan}│${NC}${Kbiru} [•4]${NC}📨 ${white} TROJAN-GO${NC}  " "${Kbiru}[•9]${NC}📨 ${white} SET PASW VPS${NC} "   "${Kcyan}│${NC}"
-echo -e "${Kcyan}│${NC}${Kbiru} [•5]${NC}📨 ${white} TROJAN-WS${NC}  " "${Kbiru}[10]${NC}📨 ${white} REBOT SETINGS${NC}"   "${Kcyan}│${NC}"
+echo -e "${Kcyan}│${NC}${Kbiru} [•5]${NC}📨 ${white} TROJAN-WS${NC}  " "${Kbiru}[10]${NC}📨 ${white} MENU SETINGS${NC} "   "${Kcyan}│${NC}"
 echo -e "${Kcyan}└───────────────────────────────────────────┘"    
-echo -e "                    ${green}   11 ${NC}          "
-echo -e "                   ${red_background}EXTRA MENU${NC}"
-echo -e "               ${Kcyan}──────────────────${NC}"
+echo -e ""
 echo -e   "${kuning}"
 read -p " >>>>  "  opt
 echo -e   ""
@@ -336,7 +334,6 @@ case $opt in
 7) clear ; restarts ;;
 8) clear ; menu-backup ;;
 9) clear ; passwd ;;
-10) clear ; auto-reboot ;;
-11) clear ; menu-set ;;
+10) clear ; menu-set ;;
 x) exit ;;
 esac
