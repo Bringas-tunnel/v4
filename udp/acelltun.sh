@@ -9,7 +9,7 @@ echo -e ""
 clear
 echo -e "SUCCES √" | lolcat
 echo -e ""
-evho -e "wait for me..............." | lolcat
+echo -e "wait for me..............." | lolcat
 sleep 3
 clear
 mkdir -p /etc/v2ray
