@@ -1,7 +1,6 @@
 #!/bin/bash
 #Script UdpCustom 2023
 #Script By MARDHEX
-
 cd
 rm -rf /root/udp
 mkdir -p /root/udp
