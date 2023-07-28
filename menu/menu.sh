@@ -302,7 +302,7 @@ clear
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}" 
                     echo -e "${Kcyan}│${NC} ${white} IP VPS  ${NC}: $IPVPS"
                     echo -e "${Kcyan}│${NC} ${white} CPU     ${NC}: $cpu_usage"  
-		    echo -e "${Kcyan}│${NC} ${white} CPU     ${NC}: $(cat /etc/xray/domain)
+		    echo -e "${Kcyan}│${NC} ${white} CPU     ${NC}: $(cat /etc/xray/domain)"
                     echo -e "${Kcyan}│${NC} ${white} RAM     ${NC}: $tram Mb"
                     echo -e "${Kcyan}│${NC} ${white} VERSION ${NC}: Libev 0.2"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"  
