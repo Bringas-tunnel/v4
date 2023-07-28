@@ -122,7 +122,7 @@ echo ""
 wget -q https://raw.githubusercontent.com/artanodrop/v4/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-yellow "Add Domain for vmess/vless/trojan dll"
+yellow "MASUKAN DOMAIN ANDA "
 echo " "
 read -rp "Input ur domain : " -e pp
     if [ -z $pp ]; then
