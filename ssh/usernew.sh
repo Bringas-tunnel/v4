@@ -8,6 +8,8 @@ clear
 sldomain=$(cat /root/nsdomain)
 cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
+#Domain
+domain=$(cat /etc/xray/domain)
 clear
 
 cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
@@ -67,7 +69,7 @@ echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[1;36m__________________________________________\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          𝗦𝗘𝗥𝗩𝗘𝗥            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[1;36m__________________________________________033[0m" | tee -a /etc/log-create-user.log
-echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
+echo -e "Host        : $domain" | tee -a /etc/log-create-user.log
 echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
 echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "SSHWS       : $portsshws" | tee -a /etc/log-create-user.log
@@ -86,13 +88,13 @@ echo -e "PAYLOAD : pake payload websocket"
 echo -e "_________________________________________________"
 echo -e "${hijau}contoh mode ws & ssl port 443${NC}"
 echo -e "_________________________________________________"
-echo -e "$domen:443@Login:$Pass"
+echo -e "$domain:443@Login:$Pass"
 echo -e "PAYLOAD   : pake payload ws & ssl"
 echo -e "SNI / SSL : Masukan_bug
 echo -e___________________________________________________"
 echo -e "Payload ws ssl port 443" | tee -a /etc/log-create-user.log
 echo -e "
-GET-CFRAY wss://[host] [protocol][crlf]Host: ${domen}
+GET-CFRAY wss://[host] [protocol][crlf]Host: ${domain}
 [crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -115,7 +117,7 @@ echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
 echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
 echo -e "           ${red_background}DETAIL${NC}" | tee -a /etc/log-create-user.log
 echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
-echo -e "Host     : $domen" | tee -a /etc/log-create-user.log
+echo -e "Host     : $domain" | tee -a /etc/log-create-user.log
 echo -e "NS       : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "PubKey   : $slkey" | tee -a /etc/log-create-user.log
 echo -e "Port ws  : 80" | tee -a /etc/log-create-user.log
@@ -133,13 +135,13 @@ echo -e "payload √   : masukan payload websocket"
 echo -e "${ungu}__________________________________________${NC}" | tee -a /etc/log-create-user.log
 echo -e "${hijau}contoh mode ws ssl http custom${NC}"
 echo -e "${ungu}__________________________________________${NC}" | tee -a /etc/log-create-user.log
-echo -e "ws ssl      : $domen:443@$Login:$Pass"
+echo -e "ws ssl      : $domain:443@$Login:$Pass"
 echo -e "SSL / SNI √ : masukan Bug"
 echo -e "payload √   : masukan payload ws ssl"
 echo -e "${ungu}__________________________________________${NC}" | tee -a /etc/log-create-user.log
 echo -e "${hijau}contoh mode udp${NC}" 
 echo -e "${ungu}__________________________________________${NC}" | tee -a /etc/log-create-user.log
-echo -e "SETING-UDP  : $domen:1-65535@$Login:$Pass"
+echo -e "SETING-UDP  : $domain:1-65535@$Login:$Pass"
 echo -e "UDP CUSTOM  : centang ✓"
 echo -e "${ungu}__________________________________________${Nc}" | tee -a /etc/log-create-user.log
 #echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
@@ -152,13 +154,13 @@ $domen[crlf]Upgrade: ws[crlf][crlf]
 echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
 echo -e "payload ws ssl ( port 443 )"
 echo -e "
-GET-CFRAY wss://[host] HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: ws[crlf][crlf]
+GET-CFRAY wss://[host] HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
 echo -e "payload opok Telkomsel"
 echo -e "
 GET http://tsel.me/worryfree/ HTTP/1.1[crlf]Host: 
-$domen[crlf][crlf]
+$domain[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
 fi
