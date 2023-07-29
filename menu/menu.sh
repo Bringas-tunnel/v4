@@ -308,7 +308,7 @@ clear
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"  
                     echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
-                    echo -e "${Kcyan}│${MK} SSH : $ssh1 │ VMES : $vma │ VLES : $vla │ TROJAN : $tra"${Kcyan}│${NC}
+                    echo -e "${Kcyan}${MK} SSH : $ssh1 │ VMES : $vma │ VLES : $vla │ TROJAN : $tra"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
                     echo -e "${Kcyan}│${NC}${whiteK}           Client : ${NC}${MK}$Name${NC}"
@@ -323,7 +323,7 @@ clear
                     echo -e "${Kcyan}└───────────────────────────────────────────┘"    
 echo -e ""
 echo -e   "${kuning}"
-read -p " >>>>  "  opt
+read -p " ----- >>   "  opt
 echo -e   ""
 case $opt in
 1) clear ; menu-sshh ;;
