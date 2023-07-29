@@ -210,8 +210,8 @@ cyan='\033[1;36m'
 white='\033[1;37m'
 # VPS Information
 #Domain
-domain=$(cat /etc/xray/domain)
-# echo "IP=" >> /var/lib/SIJA/ipvps.conf
+#domain=$(cat /etc/xray/domain)
+IP=$host" > /var/lib/SIJA/ipvps.conf
 #Status certificate
 modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
 modifyTime1=$(date +%s -d "${modifyTime}")
@@ -302,7 +302,7 @@ clear
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}" 
                     echo -e "${Kcyan}│${NC} ${white} IP VPS  ${NC}: $IPVPS"
                     echo -e "${Kcyan}│${NC} ${white} CPU     ${NC}: $cpu_usage"  
-		    echo -e "${Kcyan}│${NC} ${white} DOMAIN  ${NC}: $(cat /etc/xray/domain)"
+		    echo -e "${Kcyan}│${NC} ${white} DOMAIN  ${NC}: $IP"
                     echo -e "${Kcyan}│${NC} ${white} RAM     ${NC}: $tram Mb"
                     echo -e "${Kcyan}│${NC} ${white} VERSION ${NC}: Libev 0.2"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"  
