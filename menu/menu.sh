@@ -318,7 +318,7 @@ clear
                     echo -e "${Kcyan}│${NC}${Kbiru} [•1]${NC}📨 ${white} SSH${NC}        " "${Kbiru}[•6]${NC}📨 ${white} CHECK RUNNING${NC}"   "${Kcyan}│${NC}"
                     echo -e "${Kcyan}│${NC}${Kbiru} [•2]${NC}📨 ${white} VMESS${NC}      " "${Kbiru}[•7]${NC}📨 ${white} RESTR SERVICE${NC}"   "${Kcyan}│${NC}"  
                     echo -e "${Kcyan}│${NC}${Kbiru} [•3]${NC}📨 ${white} VLESS${NC}      " "${Kbiru}[•8]${NC}📨 ${white} BACKUP MENU${NC}  "   "${Kcyan}│${NC}"
-                    echo -e "${Kcyan}│${NC}${Kbiru} [•4]${NC}📨 ${white} TROJAN-GO${NC}  " "${Kbiru}[•9]${NC}📨 ${white} SET PASW VPS${NC} "   "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•4]${NC}📨 ${white} TROJAN-GO${NC}  " "${Kbiru}[•9]${NC}📨 ${white} CHANGE DOMAIN${NC}"   "${Kcyan}│${NC}"
                     echo -e "${Kcyan}│${NC}${Kbiru} [•5]${NC}📨 ${white} TROJAN-WS${NC}  " "${Kbiru}[10]${NC}📨 ${white} MENU SETINGS${NC} "   "${Kcyan}│${NC}"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘"    
 echo -e ""
@@ -334,7 +334,7 @@ case $opt in
 6) clear ; status ;;
 7) clear ; restarts ;;
 8) clear ; menu-backup ;;
-9) clear ; passwd ;;
+9) clear ; menu-domain;;
 10) clear ; menu-set ;;
 x) exit ;;
 esac
