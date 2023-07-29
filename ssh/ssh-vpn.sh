@@ -322,7 +322,7 @@ wget -O status "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/status.
 wget -O menu-backup "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/backup/menu-backup.sh"
 wget -O backup "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/backup/backup.sh"
 wget -O restore "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/backup/restore.sh"
-
+wget -O genssl "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/backup/genssl.sh"
 wget -O jam "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/jam.sh"
 wget -O up "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/up.sh"
 
@@ -336,6 +336,7 @@ chmod +x menu-trgo
 chmod +x menu-trojan
 chmod +x user-lock
 chmod +x user-unlock
+chmod +x genssl
 
 chmod +x menu-sshh
 chmod +x usernew
