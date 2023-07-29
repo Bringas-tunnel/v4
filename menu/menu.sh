@@ -211,7 +211,7 @@ white='\033[1;37m'
 # VPS Information
 #Domain
 #domain=$(cat /etc/xray/domain)
-IP=$host" > /var/lib/SIJA/ipvps.conf
+IP=$host > /var/lib/SIJA/ipvps.conf
 #Status certificate
 modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
 modifyTime1=$(date +%s -d "${modifyTime}")
@@ -312,7 +312,7 @@ clear
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
                     echo -e "${Kcyan}│${NC}${whiteK}           Client : ${NC}${MK}$Name${NC}"
-                    echo -e "${Kcyan}│${NC}${whiteK}           Xpired : ${NC}${MK}($Exp) $exp2 days ${NC}"
+                    echo -e "${Kcyan}│${NC}${whiteK}           Xpired : ${NC}${MK}$exp2 days ${NC}"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐"
                     echo -e "${Kcyan}│${NC}${Kbiru} [•1]${NC}📨 ${white} SSH${NC}        " "${Kbiru}[•6]${NC}📨 ${white} CHECK RUNNING${NC}"   "${Kcyan}│${NC}"
