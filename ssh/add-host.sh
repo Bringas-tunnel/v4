@@ -21,5 +21,5 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo "Dont forget to renew cert"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+genssl
 fi
