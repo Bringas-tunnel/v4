@@ -211,7 +211,7 @@ white='\033[1;37m'
 # VPS Information
 #Domain
 #domain=$(cat /etc/xray/domain)
-IP=$host > /var/lib/SIJA/ipvps.conf
+domain=$(cat /var/lib/SIJA/ipvps.conf | cut -d'=' -f2)
 #Status certificate
 modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
 modifyTime1=$(date +%s -d "${modifyTime}")
