@@ -10,6 +10,7 @@ BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
+y="\033[1;33m"
 # ==========================================
 # Getting
 clear
@@ -62,4 +63,6 @@ Link Backup   : $link
 Tanggal       : $date
 ==================================
 "
-echo "Silahkan cek Kotak Masuk $email"
+echo "${y}*
+echo "COPY / SALIN LINK BACK UP NYA"
+echo "RESTORE LINK BACKUP NYA DI VPS BARU"
