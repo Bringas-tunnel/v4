@@ -17,8 +17,7 @@ Suffix="\033[0m"
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo -e
 echo -e "${BlueCyan}              Menu Backup                   "
-echo -e
-echo -e "             Bringas-family"
+echo -e ""
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo
@@ -40,9 +39,7 @@ then
 figlet "backup" | lolcat
 backup
 echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script bringas"
-echo
+echo ""
 echo "--------------------------------------------------------"
 fi
 
@@ -51,9 +48,7 @@ then
 figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas"
-echo
+echo ""
 echo "--------------------------------------------------------"
 fi
 if [ $bro = 3 ] || [ $bro = 3 ]
@@ -61,18 +56,14 @@ then
 figlet "strt"
 strt
 echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas"
-echo
+echo ""
 echo "--------------------------------------------------------"
 fi
 if [ $bro = 4 ] || [ $bro = 4 ]
 then
 limitspeed
 echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas"
-echo
+echo ""
 echo "--------------------------------------------------------"
 fi
 
@@ -80,8 +71,6 @@ if [ $bro = 5 ] || [ $bro = 5 ]
 then
 autobackup
 echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas"
-echo
+echo ""
 echo "--------------------------------------------------------"
 fi
