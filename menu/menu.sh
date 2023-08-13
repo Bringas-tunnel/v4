@@ -273,7 +273,8 @@ else
     status_nginx="${red}OFF${NC}"
 fi
 clear   
-                    echo -e "         ┌───────────────────────────────────────────┐${NC}"
+     echo -e " ${w}${NC}"
+                    echo -e "         ┌───────────────────────────────────────────┐"
                     echo -e "         │ ${c} IP VPS  : $IPVPS ${NC}"
                     echo -e "         │ ${c} CPU     : $cpu_usage ${NC}"  
 		    echo -e "         │ ${c} DOMAIN  : $domain ${NC}"
@@ -300,11 +301,11 @@ clear
                     echo -e "         │${r}             Xpired : ${r}$exp2 days ${NC}"
                     echo -e "         └───────────────────────────────────────────┘"
 		    echo -e "                          "
-                    echo -e "          ${uw}            Version : 4.0.9 ${NC}
+                    echo -e "          ${uw}            Version : 4.0.9 ${NC}"
 		    echo -e "                           ${y}__${r}__${u}__${w}__${c}__${g}${NC}"
 echo -e ""
 echo -e   "${g}"
-read -p " ----- >>   "  opt
+read -p " select menu [ 1 / 10 ] >>   "  opt
 echo -e   ""
 case $opt in
 1) clear ; menu-sshh ;;
