@@ -78,7 +78,7 @@ echo -e "WS+SSL      : $wsssl" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
 echo -e "UDPGW       : 7200 - support VC" | tee -a /etc/log-create-user.log
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
-echo -e___________________________________________________"
+echo -e "___________________________________________________"
 echo -e "Payload ws ssl port 443" | tee -a /etc/log-create-user.log
 echo -e "
 GET-CFRAY wss://[host] [protocol][crlf]Host: ${domain}
