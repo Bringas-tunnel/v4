@@ -9,8 +9,8 @@ sldomain=$(cat /root/nsdomain)
 cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
 #Domain
-#domain=$(cat /etc/xray/domain)
-domain=$(cat /var/lib/SIJA/ipvps.conf)
+domain=$(cat /etc/xray/domain)
+#domain=$(cat /var/lib/SIJA/ipvps.conf)
 clear
 
 cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
