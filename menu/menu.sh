@@ -249,7 +249,7 @@ c="\e[1;36m" # CYANN
 y="\e[1;33m" # KUNING
 g="\e[1;32m" # HIJAU
 w="\e[1;37m" # PUTIH
-u="\e[1;37m" # UNGU
+u="\e[1;35m" # UNGU
 #Status running 
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
@@ -272,29 +272,34 @@ else
 fi
 clear                    
                     echo -e "         ┌───────────────────────────────────────────┐" 
+		    echo -e "                           ${ug}${g}SYSTEM${NC}"
+                    echo -e ""
                     echo -e "         │ ${u} IP VPS  ${NC}: $IPVPS"
                     echo -e "         │ ${u} CPU     ${NC}: $cpu_usage"  
-		    echo -e "         │ ${u} DOMAIN  ${NC}: $domain"
+		    echo -e "         │ ${u} DOMAIN  ${NC}: $domain"✓
                     echo -e "         │ ${u} RAM     ${NC}: $tram Mb"
                     echo -e "         │ ${u} DATE    ${NC}: $DATE"
 		    echo -e "         │ ${u} WAKTU   ${NC}: $WKT"
                     echo -e "         └───────────────────────────────────────────┘"  
-                    echo -e "         [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
-                    echo -e "         ┌───────────────────────────────────────────┐"
+                    echo -e "          [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
+                    echo -e "                      ┌──────────────────────┐"
 		    echo -e "                           ${ug}${g}LIST ACCOUNT${NC}"
+                    echo -e "                      └──────────────────────┘"
                     echo -e ""
-                    echo -e "                   ${y}SSH        ${u}[ ACCOUNT ]${NC} = ${w} $ssh1 ${NC}"
-		    echo -e "                   ${y}VMESS      ${u}[ ACCOUNT ]${NC} = ${w} $vma  ${NC}"
-	            echo -e "                   ${y}VLESS      ${u}[ ACCOUNT ]${NC} = ${w} $vla  ${NC}"
-		    echo -e "                   ${y}TROJAN     ${u}[ ACCOUNT ]${NC} = ${w} $tra  ${NC}"
+                    echo -e "                 ${u}SSH          ${w}[ ACCOUNT ]${NC} = ${w}  $ssh1 ${NC}"
+		    echo -e "                 ${u}VMESS        ${w}[ ACCOUNT ]${NC} = ${w}  $vma  ${NC}"
+	            echo -e "                 ${u}VLESS        ${w}[ ACCOUNT ]${NC} = ${w}  $vla  ${NC}"
+		    echo -e "                 ${u}TROJAN       ${w}[ ACCOUNT ]${NC} = ${w}  $tra  ${NC}"
                     echo -e "         └───────────────────────────────────────────┘"
-		    echo -e "                           ${uc}${c}DAFTAR MENU${NC}"
-                    echo -e "                         ──────────────────" | lolcat
-                    echo -e "         ${y} [•1]${NC} SSH & UDP  "     "${y}[•6]${NC} CHECK RUNNING"
-                    echo -e "         ${y} [•2]${NC} VMESS Xray "     "${y}[•7]${NC} RESTR SERVICE"  
-                    echo -e "         ${y} [•3]${NC} VLESS Xray "     "${y}[•8]${NC} BACKUP MENU  " 
-                    echo -e "         ${y} [•4]${NC} TROJAN-GO  "     "${y}[•9]${NC} CHANGE BANNER"
-                    echo -e "         ${y} [•5]${NC} TROJAN-WS  "     "${y}[10]${NC} MENU SETTINGS"
+		    echo -e "                      ┌──────────────────────┐"
+		    echo -e "                           ${ug}${g}DAFTAR MENU${NC}"
+                    echo -e "                      └──────────────────────┘"
+                    echo -e ""
+                    echo -e "         ${y} [•1]${NC} SSH & UDP  "     "   ${y}[•6]${NC} CHECK RUNNING"
+                    echo -e "         ${y} [•2]${NC} VMESS Xray "     "   ${y}[•7]${NC} RESTR SERVICE"  
+                    echo -e "         ${y} [•3]${NC} VLESS Xray "     "   ${y}[•8]${NC} BACKUP MENU  " 
+                    echo -e "         ${y} [•4]${NC} TROJAN-GO  "     "   ${y}[•9]${NC} CHANGE BANNER"
+                    echo -e "         ${y} [•5]${NC} TROJAN-WS  "     "   ${y}[10]${NC} MENU SETTINGS"
 		    echo -e "         ┌───────────────────────────────────────────┐"
                     echo -e "         │${y}             Client : ${y}$Name${NC}"
                     echo -e "         │${c}             Xpired : ${c}$exp2 days ${NC}"
