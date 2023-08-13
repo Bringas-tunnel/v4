@@ -301,8 +301,8 @@ clear
                     echo -e "         │${r}             Xpired : ${r}$exp2 days ${NC}"
                     echo -e "         └───────────────────────────────────────────┘"
 		    echo -e "                          "
-                    echo -e "          ${uw}            Version : 4.0.9 ${NC}"
-		    echo -e "                           ${y}__${r}__${u}__${w}__${c}__${g}${NC}"
+                    echo -e "          ${w}             Version : 4.0.9 ${NC}"
+		    echo -e "                       ${y}___${r}___${u}___${w}___${c}___${g}${NC}"
 echo -e ""
 echo -e   "${g}"
 read -p " select menu [ 1 / 10 ] >>   "  opt
