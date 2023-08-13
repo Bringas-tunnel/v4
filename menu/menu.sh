@@ -95,20 +95,20 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 # Color Validation
 DF='\e[39m'
 Bold='\e[1m'
-Blink='\e[5m'
-yell='\e[33m'
-red='\e[31m'
-green='\e[32m'
-blue='\e[34m'
-PURPLE='\e[35m'
-cyan='\e[1;36m'
-Lred='\e[91m'
-Lgreen='\e[92m'
-Lyellow='\e[93m'
+#Blink='\e[5m'
+#yell='\e[33m'
+#red='\e[31m'
+#green='\e[32m'
+#blue='\e[34m'
+#PURPLE='\e[35m'
+#cyan='\e[1;36m'
+#Lred='\e[91m'
+#Lgreen='\e[92m'
+#Lyellow='\e[93m'
 NC='\e[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-LIGHT='\033[0;37m'
+#GREEN='\033[0;32m'
+#ORANGE='\033[0;33m'
+#LIGHT='\033[0;37m'
 # VPS Information
 #Domain
 domain=$(cat /etc/xray/domain)
@@ -127,33 +127,33 @@ fi
 uptime="$(uptime -p | cut -d " " -f 2-10)"
 # Download
 #Download/Upload today
-dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
-utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
-ttoday="$(vnstat -i eth0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}')"
+#dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
+#utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
+#ttoday="$(vnstat -i eth0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}')"
 #Download/Upload yesterday
-dyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $2" "substr ($3, 1, 1)}')"
-uyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $5" "substr ($6, 1, 1)}')"
-tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}')"
+#dyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $2" "substr ($3, 1, 1)}')"
+#uyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $5" "substr ($6, 1, 1)}')"
+#tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}')"
 #Download/Upload current month
-dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
-umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
-tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
+#dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
+#umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
+#tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
 # Getting CPU Information
-cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
-cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
+#cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
+#cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
-DAY=$(date +%A)
+#DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 IPVPS=$(curl -s ipinfo.io/ip )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
 tram=$( free -m | awk 'NR==2 {print $2}' )
-uram=$( free -m | awk 'NR==2 {print $3}' )
-fram=$( free -m | awk 'NR==2 {print $4}' )
+#uram=$( free -m | awk 'NR==2 {print $3}' )
+#fram=$( free -m | awk 'NR==2 {print $4}' )
 # // SSH Websocket Proxy
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
@@ -185,29 +185,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 # Color Validation
 DF='\e[39m'
 Bold='\e[1m'
-Blink='\e[1;5m'
-yell='\e[13;3m'
-red='\e[1;31m'
-green='\e[1;32m'
-blue='\e[1;34m'
-ungu='\e[1;35m'
-cyan='\e[1;36m'
-Lred='\e[1;91m'
-Lgreen='\e[92m'
-Lyellow='\e[93m'
-NC='\e[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-LIGHT='\033[0;37m'
-RED='\033[1;31m'
-NC='\033[0m'
-yl='\e[32;1m'
-green='\033[1;32m'
-orange='\033[1;33m'
-blue='\033[1;34m'
-ungu='\033[1;35m'
-cyan='\033[1;36m'
-white='\033[1;37m'
+
 # VPS Information
 #Domain
 #domain=$(cat /etc/xray/domain)
@@ -235,9 +213,9 @@ dyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $2" "substr ($3, 1, 1)}
 uyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $5" "substr ($6, 1, 1)}')"
 tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}')"
 #Download/Upload current month
-dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
-umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
-tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
+#dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
+#umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
+#tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
 # warna valid 
 green_background="\033[42;37m"
 red_background="\033[41;37m"
@@ -248,36 +226,30 @@ cpu_usage+=" %"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
-DAY=$(date +%A)
+#DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 IPVPS=$(curl -s ipinfo.io/ip )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
 tram=$( free -m | awk 'NR==2 {print $2}' )
-uram=$( free -m | awk 'NR==2 {print $3}' )
-fram=$( free -m | awk 'NR==2 {print $4}' )
+#uram=$( free -m | awk 'NR==2 {print $3}' )
+#fram=$( free -m | awk 'NR==2 {print $4}' )
 # // SSH Websocket Proxy 
 #Warna Teks Background
-Bhijau="\033[4;32m"
-Bmerah="\033[4;31m"
-Bkuning="\033[4;33m"
-Bputih="\033[4;37m"
-Kbiru="\033[1;36m" # kedip biru
-Bungu="\033[4;35m"
-Bcyan="\033[4;36m"
-Bhitam="\033[4;30m"
+#Bhijau="\033[4;32m"
+#Bmerah="\033[4;31m"
+#Bkuning="\033[4;33m"
+#Bputih="\033[4;37m"
+#Bungu="\033[4;35m"
+#Bcyan="\033[4;36m"
+#Bhitam="\033[4;30m"
 #Warna Text 
-kuning="\e[1;33m"
-hijau="\e[1;32m"
-cyan="\e[1;36m"
-cyann="\e[1;36m"
-pu="\e[5;35m" # ungu kedip
-MK="\e[1;36m" # merah kedip
-whiteK="\e[1;37m"
-Kcyan="\e[1;36m"
-RB="\033[41;37m" #background merah
-Ucyan="\033[4;36m"
+c="\e[1;36m" # CYANN
+y="\e[1;33m" # KUNING
+g="\e[1;32m" # HIJAU
+w="\e[1;37m" # PUTIH
+u="\e[1;37m" # UNGU
 #Status running 
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
@@ -299,30 +271,31 @@ else
     status_nginx="${red}OFF${NC}"
 fi
 clear                    
-                    echo -e "┌───────────────────────────────────────────┐${NC}" 
-                    echo -e "│ ${white} IP VPS  ${NC}: $IPVPS"
-                    echo -e "│ ${white} CPU     ${NC}: $cpu_usage"  
-		    echo -e "│ ${white} DOMAIN  ${NC}: $domain"
-                    echo -e "│ ${white} RAM     ${NC}: $tram Mb"
-                    echo -e "│ ${white} VERSION ${NC}: Libev 0.2"
-                    echo -e "└───────────────────────────────────────────┘${NC}"  
-                    echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
-                    echo -e "┌───────────────────────────────────────────┐${NC}"
-                    echo -e "${Kcyan}${MK} SSH : $ssh1 │ VMES : $vma │ VLES : $vla │ TROJAN : $tra"
-                    echo -e "└───────────────────────────────────────────┘${NC}"
-                    echo -e "┌───────────────────────────────────────────┐${NC}"
-                    echo -e "│${whiteK}           Client : ${NC}${MK}$Name${NC}"
-                    echo -e "│${whiteK}           Xpired : ${NC}${MK}$exp2 days ${NC}"
-                    echo -e "└───────────────────────────────────────────┘${NC}"
-                    echo -e "┌───────────────────────────────────────────┐"
-                    echo -e "│${Kbiru} [•1]${NC}📨 ${white} SSH${NC}        " "${Kbiru}[•6]${NC}📨 ${white} CHECK RUNNING${NC}"   "${Kcyan}│${NC}"
-                    echo -e "│${Kbiru} [•2]${NC}📨 ${white} VMESS${NC}      " "${Kbiru}[•7]${NC}📨 ${white} RESTR SERVICE${NC}"   "${Kcyan}│${NC}"  
-                    echo -e "│${Kbiru} [•3]${NC}📨 ${white} VLESS${NC}      " "${Kbiru}[•8]${NC}📨 ${white} BACKUP MENU${NC}  "   "${Kcyan}│${NC}"
-                    echo -e "│${Kbiru} [•4]${NC}📨 ${white} TROJAN-GO${NC}  " "${Kbiru}[•9]${NC}📨 ${white} CHANGE DOMAIN${NC}"   "${Kcyan}│${NC}"
-                    echo -e "│${Kbiru} [•5]${NC}📨 ${white} TROJAN-WS${NC}  " "${Kbiru}[10]${NC}📨 ${white} MENU SETINGS${NC} "   "${Kcyan}│${NC}"
-                    echo -e "└───────────────────────────────────────────┘"    
+                    echo -e "         ┌───────────────────────────────────────────┐" 
+                    echo -e "         │ ${u} IP VPS  ${NC}: $IPVPS"
+                    echo -e "         │ ${u} CPU     ${NC}: $cpu_usage"  
+		    echo -e "         │ ${u} DOMAIN  ${NC}: $domain"
+                    echo -e "         │ ${u} RAM     ${NC}: $tram Mb"
+                    echo -e "         │ ${u} DATE    ${NC}: $DATE"
+		    echo -e "         │ ${u} CITY    ${NC}: $CITY"
+                    echo -e "         └───────────────────────────────────────────┘"  
+                    echo -e "         [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
+                    echo -e "         ┌───────────────────────────────────────────┐"
+                    echo -e "          ${c}${y} SSH : $ssh1 │ VMES : $vma │ VLES : $vla │ TROJAN : $tra"
+                    echo -e "         └───────────────────────────────────────────┘"
+                    echo -e "         ┌───────────────────────────────────────────┐"
+                    echo -e "         │${y}           Client : ${y}$Name${NC}"
+                    echo -e "         │${c}           Xpired : ${c}$exp2 days ${NC}"
+                    echo -e "         └───────────────────────────────────────────┘"
+                    echo -e "         ┌───────────────────────────────────────────┐"
+                    echo -e "         │${y} [•1]${NC}📨 SSH & UDP  " "${y}[•6]${NC}📨 CHECK RUNNING"   "│"
+                    echo -e "         │${y} [•2]${NC}📨 VMESS      " "${y}[•7]${NC}📨 RESTR SERVICE"   "│"  
+                    echo -e "         │${y} [•3]${NC}📨 VLESS      " "${y}[•8]${NC}📨 BACKUP MENU  "   "│"
+                    echo -e "         │${y} [•4]${NC}📨 TROJAN-GO  " "${y}[•9]${NC}📨 CHANGE DOMAI "   "│"
+                    echo -e "         │${y} [•5]${NC}📨 TROJAN-WS  " "${y}[10]${NC}📨 MENU SETING  "   "│"
+                    echo -e "         └───────────────────────────────────────────┘"    
 echo -e ""
-echo -e   "${kuning}"
+echo -e   "${g}"
 read -p " ----- >>   "  opt
 echo -e   ""
 case $opt in
