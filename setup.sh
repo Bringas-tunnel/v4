@@ -160,7 +160,7 @@ echo -e "$green      Memasang backup server              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
 sleep 2 
 clear 
-wget https://raw.githubusercontent.com/Andyyuda/v4/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/Bringas-tunnel/v5/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
 clear
 #Instal slowdns
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -216,7 +216,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ Created => BRINGAS FAMILY ]-===================="
+echo "=====================-[ BRINGAS FAMILY ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -257,7 +257,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By BRINGASS TUNNEL ]-==============="
+echo "===============-[  BRINGASS TUNNEL ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
@@ -267,5 +267,5 @@ rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
-read -n 1 -s -r -p "Press enter to reboot"
-reboot
+read -n 1 -s -r -p "Press [ ENTER ] to Menu"
+menu
