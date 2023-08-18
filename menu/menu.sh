@@ -88,8 +88,6 @@ export NC='\033[0m'
 
 # // Clear
 clear
-
-MYIP=$(curl -sS ipv4.icanhazip.com)
 #########################
 
 # Color Validation
@@ -185,7 +183,26 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 # Color Validation
 DF='\e[39m'
 Bold='\e[1m'
-
+#Status running 
+ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ $ssh_ws == "running" ]]; then
+    status_ws_epro="${GREEN}ON${NC}"
+else
+    status_ws_epro="${red}OFF${NC}"
+fi
+# // Trojan Proxy
+ss=$( systemctl status xray | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ $ss == "running" ]]; then
+    status_ss="${GREEN}ON${NC}"
+else
+    status_ss="${red}OFF${NC}"
+fi
+nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ $nginx == "running" ]]; then
+    status_nginx="${GREEN}ON${NC}"
+else
+    status_nginx="${red}OFF${NC}"
+fi
 # VPS Information
 #Domain
 #domain=$(cat /etc/xray/domain)
@@ -216,9 +233,6 @@ tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}
 #dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
 #umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
 #tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
-# warna valid 
-green_background="\033[42;37m"
-red_background="\033[41;37m"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
@@ -252,29 +266,15 @@ w="\e[1;37m" # PUTIH
 u="\e[1;35m" # UNGU
 r="\e[1;31m" # MERAH
 NC="\e[0m"
-#Status running 
-ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $ssh_ws == "running" ]]; then
-    status_ws_epro="${GREEN}ON${NC}"
-else
-    status_ws_epro="${red}OFF${NC}"
-fi
-# // Trojan Proxy
-ss=$( systemctl status xray | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $ss == "running" ]]; then
-    status_ss="${GREEN}ON${NC}"
-else
-    status_ss="${red}OFF${NC}"
-fi
-nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $nginx == "running" ]]; then
-    status_nginx="${GREEN}ON${NC}"
-else
-    status_nginx="${red}OFF${NC}"
-fi
+# background
+GB="\033[42;37m" # HIJAU BACKGROUND
+RB="\033[41;37m" # MERAH BACKGROUND
+MYIP=$(curl -sS ipv4.icanhazip.com)
 clear   
      echo -e " ${w}${NC}"
                     echo -e "         ┌───────────────────────────────────────────┐"
+		    echo -e "         |${GB}              BRINGAS TUNNEL              ${NC}" "|"
+		    echo -e "         └───────────────────────────────────────────┘"
                     echo -e "         │ ${c} IP VPS  : $IPVPS ${NC}"
                     echo -e "         │ ${c} CPU     : $cpu_usage ${NC}"  
 		    echo -e "         │ ${c} DOMAIN  : $domain ${NC}"
